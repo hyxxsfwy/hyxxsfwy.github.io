@@ -1,0 +1,26 @@
+User-agent: Baiduspider
+Disallow: /atts
+User-agent: Sosospider
+Disallow: /atts
+User-agent: sogou spider
+Disallow: /atts
+User-agent: YodaoBot
+Disallow: /atts
+User-agent: Googlebot
+Disallow: /atts
+User-agent: Bingbot
+Disallow: /atts
+User-agent: Slurp
+Disallow: /atts
+User-agent: MSNBot
+Disallow: /atts
+User-agent: googlebot-image
+Disallow: /atts
+User-agent: googlebot-mobile
+Disallow: /atts
+User-agent: yahoo-blogs/attsv3.9
+Disallow: /atts
+User-agent: psbot
+Disallow: /atts
+User-agent: *
+Disallow: /atts

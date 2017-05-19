@@ -1,0 +1,150 @@
+<!DOCTYPE html><script type="text/javascript">
+var host = "hyxxsfwy.github.io";
+if ((host == window.location.host) && (window.location.protocol != "https:"))
+    window.location.protocol = "https";
+</script><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description"><title>Hexo Markdown 简明语法手册 | Mobilicorpus</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.1"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/normalize/6.0.0/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/0.6.2/pure-min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ga('create','UA-51773802-2','auto');ga('send','pageview');</script></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">Hexo Markdown 简明语法手册</h1><a id="logo" href="/.">Mobilicorpus</a><p class="description">幻影显形 | Keep Curiosity</p></div><div id="nav-menu"><a href="/." class="current"><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a></div></div><div id="layout" class="pure-g"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">Hexo Markdown 简明语法手册</h1><div class="post-meta">Jan 15, 2016<span> | </span><span class="category"><a href="/categories/学习/">学习</a></span><script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span></div><a data-disqus-identifier="2016/01/15/Hexo-Markdown-简明语法手册/" href="/2016/01/15/Hexo-Markdown-简明语法手册/#disqus_thread" class="disqus-comment-count"></a><div class="clear"><div id="toc" class="toc-article"><div class="toc-title">文章目录</div><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#内容目录"><span class="toc-text">内容目录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#文章头格式"><span class="toc-text">文章头格式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#斜体和粗体"><span class="toc-text">斜体和粗体</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#分级标题"><span class="toc-text">分级标题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#分割线"><span class="toc-text">分割线</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#删除线"><span class="toc-text">删除线</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#超链接"><span class="toc-text">超链接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#注释"><span class="toc-text">注释</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#引用"><span class="toc-text">引用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#列表与表格"><span class="toc-text">列表与表格</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#无序列表"><span class="toc-text">无序列表</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#有序列表"><span class="toc-text">有序列表</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#绘制表格"><span class="toc-text">绘制表格</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#代码块"><span class="toc-text">代码块</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#行内代码块"><span class="toc-text">行内代码块</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#多行代码块"><span class="toc-text">多行代码块</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#加强的代码块"><span class="toc-text">加强的代码块</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#LaTeX-公式"><span class="toc-text">LaTeX 公式</span></a></li></ol></div></div><div class="post-content"><h3 id="内容目录"><a href="#内容目录" class="headerlink" title="内容目录"></a>内容目录</h3><p>在段落中填写 <code>[TOC]</code> 以显示全文内容的目录结构。</p>
+<h3 id="文章头格式"><a href="#文章头格式" class="headerlink" title="文章头格式"></a>文章头格式</h3><p><code>front-matter</code> 的基本格式示例如下：<br><figure class="highlight yaml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="meta">---</span></div><div class="line"><span class="attr">title:</span> <span class="string">Hexo</span> <span class="string">Markdown-it</span> <span class="string">简明语法手册</span></div><div class="line"><span class="attr">date:</span> <span class="number">2016</span><span class="bullet">-01</span><span class="bullet">-15</span> <span class="number">20</span><span class="string">:19:32</span></div><div class="line"><span class="attr">tags:</span> <span class="string">[Markdown,LaTex,教程]</span></div><div class="line"><span class="attr">categories:</span> <span class="string">学习</span></div><div class="line"><span class="attr">toc:</span> <span class="literal">true</span></div><div class="line"><span class="attr">mathjax:</span> <span class="literal">true</span></div><div class="line"><span class="meta">---</span></div></pre></td></tr></table></figure></p>
+<h3 id="斜体和粗体"><a href="#斜体和粗体" class="headerlink" title="斜体和粗体"></a>斜体和粗体</h3><p>使用 <code>*</code> 和 <code>**</code> 表示斜体和粗体，格式如下：<br><figure class="highlight asciidoc"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="strong">*斜体*</span>， *<span class="strong">*粗体*</span><span class="strong">*</span></div></pre></td></tr></table></figure></p>
+<p>渲染效果： 这是 <em>斜体</em>，这是 <strong>粗体</strong> 。</p>
+<h3 id="分级标题"><a href="#分级标题" class="headerlink" title="分级标题"></a>分级标题</h3><p>使用 <code>===</code> 表示一级标题，使用 <code>---</code> 表示二级标题，格式如下：<br><figure class="highlight asciidoc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="section">这是一个一级标题</span></div><div class="line">============================</div><div class="line"></div><div class="line"><span class="section">这是一个二级标题</span></div><div class="line">--------------------------------------------------</div><div class="line"></div><div class="line">### 这是一个三级标题</div></pre></td></tr></table></figure></p>
+<p>你也可以选择在行首加<code>#</code>号表示不同级别的标题 (H1-H6)，格式如下：<br><figure class="highlight clean"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"># H1</div><div class="line">## H2</div><div class="line">### H3</div><div class="line">#### H4</div><div class="line">##### H5</div><div class="line">###### H6</div></pre></td></tr></table></figure></p>
+<a id="more"></a>
+<h3 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h3><p>在单独的一行使用 <code>***</code> 或者 <code>---</code> 表示分割线</p>
+<h3 id="删除线"><a href="#删除线" class="headerlink" title="删除线"></a>删除线</h3><p>使用 ~~ 表示删除线<br><del>这是一段错误的文本。</del></p>
+<h3 id="超链接"><a href="#超链接" class="headerlink" title="超链接"></a>超链接</h3><p>插入文字超链接的格式如下 ：<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[<span class="string">链接文字</span>](<span class="link">链接地址 "链接标题"</span>)</div></pre></td></tr></table></figure></p>
+<p>插入图片超链接的格式如下：<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">![<span class="string">图片说明</span>](<span class="link">图片链接 "图片标题"</span>)</div></pre></td></tr></table></figure></p>
+<p>引用视频则直接插入<code>iframe</code>代码：<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"/js/youtube-autoresizer.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">width</span>=<span class="string">"640"</span> <span class="attr">height</span>=<span class="string">"360"</span> <span class="attr">src</span>=<span class="string">"https://www.youtube.com/embed/HfElOZSEqn4"</span> <span class="attr">frameborder</span>=<span class="string">"0"</span> <span class="attr">allowfullscreen</span>&gt;</span><span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<hr>
+<p>文字：<a href="https://hyxxsfwy.github.com" title="https://hyxxsfwy.github.com" target="_blank" rel="external">本博客链接</a> </p>
+<p>图片： <img src="/imgs/16.01/google_2015_logo_detail.png" alt="Google的logo" title="Google的logo"></p>
+<p>视频：</p>
+<p><script src="/js/youtube-autoresizer.js"></script></p>
+<p><iframe width="640" height="360" src="https://www.youtube.com/embed/HfElOZSEqn4" frameborder="0" allowfullscreen></iframe></p>
+<hr>
+<h3 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h3><p>用 <code>\</code> 表示注释，<code>\</code> 后面的文字解析为纯文本格式。<br>渲染效果：<br>## 这不是二级标题</p>
+<h3 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h3><p>使用 <code>&gt;</code> 表示文字引用：<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;</span><span class="bash"> 野火烧不尽，春风吹又生</span></div></pre></td></tr></table></figure></p>
+<blockquote>
+<p>野火烧不尽，春风吹又生</p>
+</blockquote>
+<h3 id="列表与表格"><a href="#列表与表格" class="headerlink" title="列表与表格"></a>列表与表格</h3><h4 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h4><p>使用 *，+，- 表示无序列表。<br><figure class="highlight haml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">+ 无序列表项 一</div><div class="line">	-<span class="ruby"> 子无序列表 一</span></div><div class="line">	-<span class="ruby"> 子无序列表 二</span></div><div class="line">		* 子无序列表 三</div><div class="line">+ 无序列表项 二</div><div class="line">+ 无序列表项 三</div></pre></td></tr></table></figure></p>
+<hr>
+<ul>
+<li>无序列表项 一<ul>
+<li>子无序列表 一</li>
+<li>子无序列表 二<ul>
+<li>子无序列表 三</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>无序列表项 二</li>
+<li>无序列表项 三</li>
+</ul>
+<hr>
+<h4 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h4><p>使用数字和点表示有序列表。</p>
+<figure class="highlight lsl"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="number">1.</span> 有序列表项 一</div><div class="line">	<span class="number">1.</span> 子有序列表项 一</div><div class="line">	<span class="number">2.</span> 子有序列表项 二</div><div class="line"><span class="number">2.</span> 有序列表项 二</div><div class="line"><span class="number">3.</span> 有序列表项 三</div></pre></td></tr></table></figure>
+<hr>
+<ol>
+<li>有序列表项 一<ol>
+<li>子有序列表项 一</li>
+<li>子有序列表项 二</li>
+</ol>
+</li>
+<li>有序列表项 二</li>
+<li>有序列表项 三</li>
+</ol>
+<hr>
+<h4 id="绘制表格"><a href="#绘制表格" class="headerlink" title="绘制表格"></a>绘制表格</h4><p>绘制表格格式如下，<code>|</code> 控制分列，<code>-</code> 控制分行，<code>:</code> 控制对齐方式。<br><figure class="highlight gherkin"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">|<span class="string"> Item     </span>|<span class="string"> Value     </span>|<span class="string"> Qty   </span>|</div><div class="line">|<span class="string"> :------- </span>|<span class="string"> --------: </span>|<span class="string"> :---: </span>|</div><div class="line">|<span class="string"> Computer </span>|<span class="string"> 1600 USD  </span>|<span class="string"> 5     </span>|</div><div class="line">|<span class="string"> Phone    </span>|<span class="string"> 12 USD    </span>|<span class="string"> 12    </span>|</div><div class="line">|<span class="string"> Pipe     </span>|<span class="string"> 1 USD     </span>|<span class="string"> 234   </span>|</div></pre></td></tr></table></figure></p>
+<hr>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Item</th>
+<th style="text-align:right">Value</th>
+<th style="text-align:center">Qty</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Computer</td>
+<td style="text-align:right">1600 USD</td>
+<td style="text-align:center">5</td>
+</tr>
+<tr>
+<td style="text-align:left">Phone</td>
+<td style="text-align:right">12 USD</td>
+<td style="text-align:center">12</td>
+</tr>
+<tr>
+<td style="text-align:left">Pipe</td>
+<td style="text-align:right">1 USD</td>
+<td style="text-align:center">234</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h3><h4 id="行内代码块"><a href="#行内代码块" class="headerlink" title="行内代码块"></a>行内代码块</h4><p>使用 `codes` 表示行内代码块。</p>
+<p>渲染效果： 让我们聊聊 <code>html</code> 。</p>
+<h4 id="多行代码块"><a href="#多行代码块" class="headerlink" title="多行代码块"></a>多行代码块</h4><figure class="highlight clean"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">这是用 ``` some codes ```表示的代码块（左侧无空格）；</div><div class="line">第二行；</div><div class="line">第三行。</div></pre></td></tr></table></figure>
+<h4 id="加强的代码块"><a href="#加强的代码块" class="headerlink" title="加强的代码块"></a>加强的代码块</h4><p>支持多种编程语言的语法高亮的显示，行号显示。</p>
+<p>非代码示例：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span><span class="bash"> sudo apt-get install vim-gnome</span></div></pre></td></tr></table></figure>
+<p>Python 示例：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">requires_authorization</div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">somefunc</span><span class="params">(param1=<span class="string">''</span>, param2=<span class="number">0</span>)</span>:</span></div><div class="line">    <span class="string">'''A docstring'''</span></div><div class="line">    <span class="keyword">if</span> param1 &gt; param2: <span class="comment"># interesting</span></div><div class="line">        <span class="keyword">print</span> <span class="string">'Greater'</span></div><div class="line">    <span class="keyword">return</span> (param2 - param1 + <span class="number">1</span>) <span class="keyword">or</span> <span class="keyword">None</span></div><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">SomeClass</span>:</span></div><div class="line">    <span class="keyword">pass</span></div><div class="line"></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>message = <span class="string">'''interpreter</span></div><div class="line"><span class="meta">... </span>prompt'''</div></pre></td></tr></table></figure>
+<p>JavaScript 示例：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/*</span></div><div class="line">* nth element in the fibonacci series.</div><div class="line">* @param n &gt;= 0</div><div class="line">* @return the nth element, &gt;= 0.</div><div class="line">*/</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">fib</span>(<span class="params">n</span>) </span>&#123;</div><div class="line">  <span class="keyword">var</span> a = <span class="number">1</span>, b = <span class="number">1</span>;</div><div class="line">  <span class="keyword">var</span> tmp;</div><div class="line">  <span class="keyword">while</span> (--n &gt;= <span class="number">0</span>) &#123;</div><div class="line">    tmp = a;</div><div class="line">    a += b;</div><div class="line">    b = tmp;</div><div class="line">  &#125;</div><div class="line">  <span class="keyword">return</span> a;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="built_in">document</span>.write(fib(<span class="number">10</span>));</div></pre></td></tr></table></figure>
+<h3 id="LaTeX-公式"><a href="#LaTeX-公式" class="headerlink" title="LaTeX 公式"></a>LaTeX 公式</h3><p>数学公式的默认定界符是<code>$...$</code>和<code>\\(...\\)</code>（对于行内公式），以及<code>$$...$$</code>和<code>\\[...\\]</code>（对于块级公式）。<br>但是，如果你的文章内容中经常出现美元符号<code>$</code>,或者说你想将“$”用作美元符号而非行内公式的定界符，请在Hexo目录的_config.yml中添加：<br><figure class="highlight yaml"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="attr">mathjax2:</span> <span class="literal">true</span></div></pre></td></tr></table></figure></p>
+<p>而不是<code>mathjax: true</code>。 相应地，在需要使用数学公式的文章的<code>front-matter</code>中也添加<code>mathjax2: true</code>。 </p>
+<p>例如：</p>
+<p>质能守恒方程: <code>$E = mc^2$</code>: $E = mc^2$</p>
+<p>长度收缩：<code>$x&#39; = {x - vt \over \sqrt{1 - {v^2 \over c^2}}}$</code>: $x’ = {x - vt \over \sqrt{1 - {v^2 \over c^2}}}$</p>
+<p> 表示块级公式：<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$$\Delta_A(\lambda)=\det(\lambda I-A)$$</div></pre></td></tr></table></figure></p>
+<p>$$\Delta_A(\lambda)=\det(\lambda I-A)$$</p>
+<p>或者：</p>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="tag">\<span class="name">begin</span><span class="string">&#123;equation&#125;</span></span></div><div class="line"><span class="tag">\<span class="name">Delta</span></span>_A(<span class="tag">\<span class="name">lambda</span></span>)=<span class="tag">\<span class="name">det</span></span>(<span class="tag">\<span class="name">lambda</span></span> I-A),</div><div class="line"><span class="tag">\<span class="name">end</span><span class="string">&#123;equation&#125;</span></span></div></pre></td></tr></table></figure>
+<p>\begin{equation}<br>\Delta_A(\lambda)=\det(\lambda I-A),<br>\end{equation}</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">\begin&#123;aligned&#125;</div><div class="line">\dot&#123;x&#125; &amp; = \sigma(y-x) \\\</div><div class="line">\dot&#123;y&#125; &amp; = \rho x - y - xz \\\</div><div class="line">\dot&#123;z&#125; &amp; = -\beta z + xy</div><div class="line">\end&#123;aligned&#125;</div></pre></td></tr></table></figure>
+<p>（此处需注意换行符转义，多加一个<code>\</code>）</p>
+<p>\begin{aligned}<br>\dot{x} &amp; = \sigma(y-x) \\<br>\dot{y} &amp; = \rho x - y - xz \\<br>\dot{z} &amp; = -\beta z + xy<br>\end{aligned}</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">\begin&#123;equation&#125;</div><div class="line">[a, b, c]=\left|</div><div class="line">\begin&#123;array&#125;&#123;ccc&#125;</div><div class="line">  a<span class="emphasis">_1&amp; a_</span>2  &amp; a_3  \\\</div><div class="line"> b<span class="emphasis">_1 &amp;b_</span>2   &amp; b_3  \\\</div><div class="line"> c<span class="emphasis">_1 &amp;c_</span>2   &amp;c_3   </div><div class="line">\end&#123;array&#125;</div><div class="line">\right|</div><div class="line">\end&#123;equation&#125;</div></pre></td></tr></table></figure>
+<p>\begin{equation}<br>[a, b, c]=\left|<br>\begin{array}{ccc}<br>  a_1&amp; a_2  &amp; a_3  \\<br> b_1 &amp;b_2   &amp; b_3  \\<br> c_1 &amp;c_2   &amp;c_3<br>\end{array}<br>\right|<br>\end{equation}</p>
+<p>访问 <a href="http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference" target="_blank" rel="external">MathJax basic tutorial and quick reference</a> 参考更多使用方法。</p>
+</div><script type="text/javascript" src="/js/share.js?v=0.0.1" async></script><a data-url="https://hyxxsfwy.github.io/2016/01/15/Hexo-Markdown-简明语法手册/" data-id="cj2waumtf0002rgjg3y7gdg25" class="article-share-link">分享</a><div class="tags"><a href="/tags/Markdown/">Markdown</a><a href="/tags/LaTex/">LaTex</a><a href="/tags/教程/">教程</a></div><div class="post-nav"><a href="/2016/01/16/【转】如何在死线未至时，像死线已至那样高效？/" class="pre">【转】如何在死线未至时，像死线已至那样高效？</a><a href="/2016/01/14/hello-world/" class="next">Hello World</a></div><div id="disqus_thread"><div class="btn_click_load"><button class="disqus_click_btn">阅读评论 「请确保 disqus.com 可以正常加载」</button></div><script>var disqus_shortname = 'hyxxsfwy';
+var disqus_identifier = '2016/01/15/Hexo-Markdown-简明语法手册/';
+var disqus_title = 'Hexo Markdown 简明语法手册';
+var disqus_url = 'https://hyxxsfwy.github.io/2016/01/15/Hexo-Markdown-简明语法手册/';
+$('.btn_click_load').click(function() {
+  (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+  $('.btn_click_load').css('display','none');
+});
+$.ajax({
+  url: 'https://disqus.com/favicon.ico',
+  timeout: 3000,
+  type: 'GET',
+  success: (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    $('.btn_click_load').css('display','none');
+  })(),
+  error: function() {
+    $('.btn_click_load').css('display','block');
+  }
+});</script><script id="dsq-count-scr" src="//hyxxsfwy.disqus.com/count.js" async></script></div></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><div class="search-form"><input id="local-search-input" placeholder="Search" type="text" name="q" results="0"/><div id="local-search-result"></div></div></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/学习/">学习</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/翻墙/">翻墙</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/转载/">转载</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/翻墙/" style="font-size: 15px;">翻墙</a> <a href="/tags/免流/" style="font-size: 15px;">免流</a> <a href="/tags/HAProxy/" style="font-size: 15px;">HAProxy</a> <a href="/tags/Markdown/" style="font-size: 15px;">Markdown</a> <a href="/tags/LaTex/" style="font-size: 15px;">LaTex</a> <a href="/tags/教程/" style="font-size: 15px;">教程</a> <a href="/tags/Hello/" style="font-size: 15px;">Hello</a> <a href="/tags/密码学/" style="font-size: 15px;">密码学</a> <a href="/tags/帮助/" style="font-size: 15px;">帮助</a> <a href="/tags/GTD/" style="font-size: 15px;">GTD</a> <a href="/tags/时间管理/" style="font-size: 15px;">时间管理</a> <a href="/tags/拖延症/" style="font-size: 15px;">拖延症</a> <a href="/tags/信息安全/" style="font-size: 15px;">信息安全</a> <a href="/tags/边信道攻击/" style="font-size: 15px;">边信道攻击</a> <a href="/tags/Hack-Security/" style="font-size: 15px;">Hack&Security</a> <a href="/tags/XX-Net/" style="font-size: 15px;">XX-Net</a> <a href="/tags/Google/" style="font-size: 15px;">Google</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/04/15/【转】现代密码学实践指南-2015年/">【转】现代密码学实践指南【2015年】</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/18/搜集可用于XX-Net的高速GGC-IP段/">搜集可用于 XX-Net 的高速 GGC IP 段</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/01/【转】边信道攻击，从米特尼克传奇重现说起/">【转】边信道攻击，从米特尼克传奇重现说起</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/01/30/HaP-免流模式语法帮助文档/">HaP 免流模式语法帮助文档</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/01/16/【转】如何在死线未至时，像死线已至那样高效？/">【转】如何在死线未至时，像死线已至那样高效？</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/01/15/Hexo-Markdown-简明语法手册/">Hexo Markdown 简明语法手册</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/01/14/hello-world/">Hello World</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-comment-o"> 最近评论</i></div><script type="text/javascript" src="//hyxxsfwy.disqus.com/recent_comments_widget.js?num_items=5&amp;hide_avatars=1&amp;avatar_size=32&amp;excerpt_length=20&amp;hide_mods=1"></script></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2017 <a href="/." rel="nofollow">Mobilicorpus.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a id="rocket" href="#top" class="show"></a><script type="text/javascript" src="/js/totop.js?v=0.0.1" async></script><script type="text/javascript" src="//cdn.bootcss.com/fancybox/3.0.47/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.1" async></script><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/fancybox/3.0.47/jquery.fancybox.min.css"><script type="text/javascript" src="/js/search.js?v=0.0.1"></script><script>var search_path = 'search.xml';
+if (search_path.length == 0) {
+   search_path = 'search.xml';
+}
+var path = '/' + search_path;
+searchFunc(path, 'local-search-input', 'local-search-result');
+</script><script type="text/x-mathjax-config">MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+  });
+</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML" async></script><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.1"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.1"></script></div></body></html>
