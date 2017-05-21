@@ -1,0 +1,1 @@
+{"device_name":"My Sync Device","listening_port":19003,"storage_path":"/var/lib/resilio-sync/","pid_file":"/var/run/resilio-sync/sync.pid","use_upnp":true,"download_limit":0,"upload_limit":512,"directory_root":"/mnt/blockstorage/BT-Sync/","webui":{"listen":"0.0.0.0:8899","login":"hyxxsfwy","password":"hyxx02200059","allow_empty_password":false}}
