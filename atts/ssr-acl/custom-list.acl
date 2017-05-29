@@ -5743,6 +5743,7 @@
 
 # MyList
 (^|\.)ibm\.com$
+(^|\.)adobe\.com$
 (^|\.)ip138\.com$
 (^|\.)typekit\.net$
 (^|\.)microsoft\.com$
