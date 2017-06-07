@@ -373,8 +373,8 @@
 (^|\.)(pub|adm|jobsfe|po|pv|stat)\.funshion\.com$
 
 # iqiyi PPS 爱奇艺
-#(^|\.)ad\.m\.iqiyi\.com$
-(^|\.)afp\.qiyi\.com$
+(^|\.)ad\.m\.iqiyi\.com$
+#(^|\.)afp\.qiyi\.com$
 (^|\.)api\.cupid\.iqiyi\.com$
 (^|\.)c\.uaa\.iqiyi\.com$
 (^|\.)cloudpush\.iqiyi\.com$
