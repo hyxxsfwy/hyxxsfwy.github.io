@@ -374,18 +374,18 @@
 
 # iqiyi PPS 爱奇艺
 (^|\.)ad\.m\.iqiyi\.com$
-#(^|\.)afp\.qiyi\.com$
-(^|\.)api\.cupid\.iqiyi\.com$
+(^|\.)afp\.qiyi\.com$
+#(^|\.)api\.cupid\.iqiyi\.com$
 (^|\.)c\.uaa\.iqiyi\.com$
 (^|\.)cloudpush\.iqiyi\.com$
 (^|\.)cm\.passport\.iqiyi\.com$
-(^|\.)data\.video\.qiyi\.com$
+#(^|\.)data\.video\.qiyi\.com$
 (^|\.)emoticon\.sns\.iqiyi\.com$
 (^|\.)gamecenter\.iqiyi\.com$
 (^|\.)hotchat-im\.iqiyi\.com$
 (^|\.)ifacelog\.iqiyi\.com$
 (^|\.)mbdlog\.iqiyi\.com$
-(^|\.)meta\.video\.qiyi\.com$
+#(^|\.)meta\.video\.qiyi\.com$
 (^|\.)paopao\.iqiyi\.com$
 (^|\.)paopao\d\.qiyipic\.com$
 (^|\.)policy\.video\.iqiyi\.com$
