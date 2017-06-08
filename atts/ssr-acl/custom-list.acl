@@ -105,8 +105,7 @@
 (^|\.)(ju|nbsdk-baichuan|sdkinit|simaba|tyh)\.taobao\.com$
 (^|\.)a\.alimama\.cn$
 (^|\.)acjs\.aliyun\.com$
-(^|\.)adash-c\.ut\.taobao\.com$
-(^|\.)adashxgc\.ut\.taobao\.com$
+(^|\.)adash.*\.ut\.taobao\.com$
 (^|\.)alipaylog\.com$
 (^|\.)amdc\.alipay\.com$
 (^|\.)click\.mz\.simba\.taobao\.com$
@@ -385,6 +384,7 @@
 (^|\.)hotchat-im\.iqiyi\.com$
 (^|\.)ifacelog\.iqiyi\.com$
 (^|\.)mbdlog\.iqiyi\.com$
+(^|\.)msg.?\.qiyi\.am$
 (^|\.)msg.?\.iqiyi\.com$
 (^|\.)meta\.video\.qiyi\.com$
 (^|\.)notice\.iqiyi\.com$
