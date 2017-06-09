@@ -6049,6 +6049,7 @@
 (^|\.)blogblog\.com$
 (^|\.)microsoft\.com$
 (^|\.)getpocket\.com$
+(^|\.)cnpolitics\.org$
 (^|\.)cloudfront\.net$
 (^|\.)optimizely\.com$
 (^|\.)readitlater\.com$
