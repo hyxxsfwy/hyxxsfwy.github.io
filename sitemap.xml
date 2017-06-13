@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://hyxxsfwy.github.io/atts/ubuntu-server/bypy-doc.json</loc>
+    
+    <lastmod>2017-06-13T14:29:51.758Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://hyxxsfwy.github.io/atts/ubuntu-server/v2ray-config.json</loc>
     
     <lastmod>2017-06-01T01:35:17.808Z</lastmod>
@@ -82,13 +89,6 @@
     <loc>https://hyxxsfwy.github.io/atts/ubuntu-server/bypy-hyxx.json</loc>
     
     <lastmod>2017-05-15T18:56:13.006Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hyxxsfwy.github.io/atts/ubuntu-server/bypy-doc.json</loc>
-    
-    <lastmod>2017-05-13T17:00:57.011Z</lastmod>
     
   </url>
   
