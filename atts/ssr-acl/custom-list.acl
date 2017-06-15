@@ -2,7 +2,7 @@
 #
 # 下载地址：https://hyxxsfwy.github.io/atts/ssr-acl/custom-list.acl
 # 引用来源：https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/banAD.acl
-# 更新时间：2017.06.11
+# 更新时间：2017.06.15
 #
 # 参数解释：
 # [proxy_all] 默认代理
@@ -6065,17 +6065,21 @@
 # MyList
 (^|\.)t\.co$
 (^|\.)ibm\.com$
+(^|\.)live\.com$
 (^|\.)youtu\.be$
 (^|\.)adobe\.com$
 (^|\.)ggpht\.com$
+(^|\.)skype\.com$
 (^|\.)twimg\.com$
 (^|\.)ytimg\.com$
+(^|\.)office\.com$
 (^|\.)blogger\.com$
 (^|\.)gstatic\.com$
 (^|\.)twitpic\.com$
 (^|\.)typekit\.net$
 (^|\.)blogblog\.com$
 (^|\.)microsoft\.com$
+(^|\.)office365\.com$
 (^|\.)getpocket\.com$
 (^|\.)cnpolitics\.org$
 (^|\.)cloudfront\.net$
