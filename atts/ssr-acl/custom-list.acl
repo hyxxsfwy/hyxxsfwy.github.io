@@ -1041,6 +1041,10 @@
 (^|\.)\w*xiami\w*\.\w*$
 (^|\.)\w*xiaomi\w*\.\w*$
 
+# 中国国内域名 CustomList
+(^|\.)127\.net$
+(^|\.)icourse163\.org$
+
 # TaoBao
 (^|\.)alibaba\.com$
 (^|\.)alicdn\.com$
