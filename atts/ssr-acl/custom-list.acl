@@ -6089,6 +6089,7 @@
 (^|\.)cloudfront\.net$
 (^|\.)optimizely\.com$
 (^|\.)readitlater\.com$
+(^|\.)www\.akamai\.com$
 (^|\.)s3\.amazonaws\.com$
 (^|\.)fb.*\.akamaihd\.net$
 
