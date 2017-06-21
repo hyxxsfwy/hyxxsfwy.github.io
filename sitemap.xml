@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://hyxxsfwy.github.io/atts/ubuntu-server/resilio-sync.json</loc>
+    
+    <lastmod>2017-06-20T17:24:44.750Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://hyxxsfwy.github.io/atts/ubuntu-server/bypy-config/bypy-oc.json</loc>
     
     <lastmod>2017-06-15T00:44:25.478Z</lastmod>
@@ -75,13 +82,6 @@
     <loc>https://hyxxsfwy.github.io/atts/ubuntu-server/bypy-config/bypy-wk1.json</loc>
     
     <lastmod>2017-05-21T18:01:20.186Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hyxxsfwy.github.io/atts/ubuntu-server/resilio-sync.json</loc>
-    
-    <lastmod>2017-05-21T16:08:13.429Z</lastmod>
     
   </url>
   
