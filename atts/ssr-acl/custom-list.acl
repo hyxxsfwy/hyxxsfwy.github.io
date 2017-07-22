@@ -2,7 +2,7 @@
 #
 # 下载地址：https://hyxxsfwy.github.io/atts/ssr-acl/custom-list.acl
 # 引用来源：https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/banAD.acl
-# 更新时间：2017.07.02
+# 更新时间：2017.07.22
 #
 # 参数解释：
 # [proxy_all] 默认代理
@@ -54,10 +54,12 @@
 # 163
 (^|\.)(adgeo|bobo|fa|g|g1|gb|nex)(\.corp|)\.163\.com$
 (^|\.)(analytics|img1|img2|mimg|ws|push)\.126\.net$
-(^|\.)(a|c|clkservice|conv|dsp|dsp-impr2|gorgon|impservice2|rlogs|union|ydpushserver)\.youdao\.com$
-(^|\.)(nc004x|nc045x|qt002x|tb060x|tb104x)\.corp\.youdao\.comimpservic$
+(^|\.)(a|c|clkservice|conv|dsp|dsp-impr2|gorgon|impservice2|impservice|rlogs|union|ydpushserver)\.youdao\.com$
+(^|\.)(nc004x|nc045x|qt002x|tb060x|tb104x)\.corp\.youdao\.com$
 (^|\.)haitaoad\.nosdn\.127\.net$
-(^|\.)impservic\.(chnl|dict|dictapp|ictvista|dictweb|dictword|mail)\.youdao\.com$
+(^|\.)impservice\.(chnl|dict|dictapp|ictvista|dictweb|dictword|mail|union)\.youdao\.com$
+(^|\.)ir\.mail\.126\.com$
+(^|\.)ir\.mail\.yeah\.net$
 (^|\.)oimagea2\.ydstatic\.com$
 (^|\.)pagechoice\.net$
 (^|\.)prom\.gome\.com\.cn$
@@ -123,12 +125,11 @@
 (^|\.)yiliao\.hupan\.com$
 
 # Baidu
-(^|\.)(a|adapp|adm|as|baichuan|baidutv|bar|bce|c|cb|cbjs|cbjslog|cjhq|cpro|cpro2|crs|datax|dj1|downapp|drmcmm|dxp|e|eclick|eiv|entry)\.baidu\.com$
+(^|\.)(a|adapp|adm|as|baichuan|baidutv|bar|c|cb|cbjs|cbjslog|cjhq|cpro|cpro2|crs|datax|dj1|downapp|drmcmm|dxp|e|eclick|eiv|entry)\.baidu\.com$
 (^|\.)(hc|hm|hmma|imageplus|ma|mobads-logs|mobads|mtj|nsclick)\.baidu\.com$
-(^|\.)(pos|pups|rj|rp|spcode|tk|tongji|tuisong|ucstat|ufosdk|union|utility|utk|videopush|wangmeng|wm|youqian|zhanzhang|znsv)\.baidu\.com$
+(^|\.)(pos|pups|rj|rp|spcode|tk|tongji|tuisong|ucstat|ufosdk|union|utility|utk|videopush|wangmeng|wm|youqian|znsv)\.baidu\.com$
 (^|\.)ashifen\.com$
 (^|\.)baidu9635\.com$
-(^|\.)bj\.bcebos\.com$
 (^|\.)boscdn\.bpc\.baidu\.com$
 (^|\.)cpro\.baidu\.com\.cn$
 (^|\.)cpro\.tieba\.baidu\.com$
@@ -146,6 +147,9 @@
 (^|\.)ulog\.imap\.baidu\.com$
 (^|\.)wisepush\.video\.baidu\.com$
 (^|\.)zz\.bdstatic\.com$
+
+# Apple
+(^|\.)adserver\.unityads\.unity3d\.com$
 
 # Book-app 起点 掌阅 书旗 宜搜
 (^|\.)(adm|assets|tjlog)(\.ps|)\.easou\.com$
@@ -203,7 +207,7 @@
 (^|\.)stat\.m\.jd\.com$
 
 # Kugou
-(^|\.)(d|downmobile|fanxing|gad|game|gg|install|install2|kgmobilestat|minidcsc|mo|mobilelog|mvads|p|rtmonitor|sdn|tj|)\.kugou\.com$
+(^|\.)(d|downmobile|fanxing|gad|game|gg|install|install2|kgmobilestat|minidcsc|mo|mobilelog|mvads|p|rtmonitor|sdn|tj)\.kugou\.com$
 (^|\.)(msg|push|update)\.mobile\.kugou\.com$
 (^|\.)ads\.service\.kugou\.com$
 (^|\.)gcapi\.sy\.kugou\.com$
@@ -287,7 +291,7 @@
 (^|\.)zymo\.mps\.weibo\.com$
 
 # Sougou
-(^|\.)(123|brand|get|inte|iwan|pb|pd|wan|wangmeng)\.sogou\.com$
+(^|\.)(123|brand|inte|iwan|pb|pd|wan|wangmeng)\.sogou\.com$
 (^|\.)(123|galaxy)\.sogoucdn\.com$
 
 # Toutiao
@@ -382,22 +386,21 @@
 (^|\.)c\.uaa\.iqiyi\.com$
 (^|\.)cloudpush\.iqiyi\.com$
 (^|\.)cm\.passport\.iqiyi\.com$
-(^|\.)data\.video\.qiyi\.com$
+(^|\.)cmts\.iqiyi\.com$
 (^|\.)emoticon\.sns\.iqiyi\.com$
 (^|\.)gamecenter\.iqiyi\.com$
 (^|\.)hotchat-im\.iqiyi\.com$
 (^|\.)ifacelog\.iqiyi\.com$
 (^|\.)mbdlog\.iqiyi\.com$
 (^|\.)meta\.video\.qiyi\.com$
+(^|\.)msg1\.video\.qiyi\.com$
+(^|\.)msg2\.video\.qiyi\.com$
+(^|\.)msg\.71\.am$
+(^|\.)msga\.cupid\.iqiyi\.com$
 (^|\.)paopao\.iqiyi\.com$
 (^|\.)paopao\d\.qiyipic\.com$
 (^|\.)policy\.video\.iqiyi\.com$
 (^|\.)rcd\.iqiyi\.com$
-(^|\.)cmts\.iqiyi\.com$
-(^|\.)data\.video\.qiyi\.com$
-(^|\.)msg\.71\.am$
-(^|\.)msga\.cupid\.iqiyi\.com$
-(^|\.)paopao\.iqiyi\.com$
 101.227.14.80/29
 101.227.200.0/22
 112.13.64.0/22
@@ -493,7 +496,7 @@
 (^|\.)(dev-push|push|sdk)\.m\.youku\.com$
 (^|\.)(p|r|v)\.l\.youku\.com$
 (^|\.)a-dxk\.play\.api\.3g\.youku\.com$
-(^|\.)ad\.api\.3g(\.tudou\.youku)\.com$
+(^|\.)ad\.api\.3g(\.tudou|\.youku)\.com$
 (^|\.)ad\.api\.mobile\.youku\.com$
 (^|\.)atm\.youku\.com$
 (^|\.)b\.smartvideo\.youku\.com$
@@ -561,13 +564,6 @@
 (^|\.)(click|media|pv)\.(cheshi|cheshi-img)\.com$
 (^|\.)(d0|dw|pv)\.xcar\.com\.cn$
 (^|\.)a1\.itc\.cn$
-(^|\.)ad\.12306\.cn$
-(^|\.)ad\.3\.cn$
-(^|\.)ad\.95306\.cn$
-(^|\.)ad\.caiyunapp\.com$
-(^|\.)ad\.cctv\.com$
-(^|\.)ad\.thepaper\.cn$
-(^|\.)ad\.unimhk\.com$
 (^|\.)adhome\.1fangchan\.com$
 (^|\.)adm\.easou\.com$
 (^|\.)adm\d\.autoimg\.cn$
@@ -576,6 +572,15 @@
 (^|\.)ads\.linkedin\.com$
 (^|\.)ads\.yahoo\.com$
 (^|\.)advert\.api\.thejoyrun\.com$
+(^|\.)adv\.ccb\.com$
+(^|\.)ad\.12306\.cn$
+(^|\.)ad\.3\.cn$
+(^|\.)ad\.95306\.cn$
+(^|\.)ad\.caiyunapp\.com$
+(^|\.)ad\.cctv\.com$
+(^|\.)ad\.cmvideo\.cn$
+(^|\.)ad\.thepaper\.cn$
+(^|\.)ad\.unimhk\.com$
 (^|\.)api-deal\.kechenggezi\.com$
 (^|\.)api-z\.weidian\.com$
 (^|\.)bam\.nr-data\.net$
@@ -733,6 +738,7 @@
 (^|\.)fancyapi\.com$
 (^|\.)fastapi\.net$
 (^|\.)fastclick\.net$
+(^|\.)feixin2\.com$
 (^|\.)flashtalking\.com$
 (^|\.)flurry\.com$
 (^|\.)getui\.com$
@@ -749,6 +755,7 @@
 (^|\.)inmobi\.com$
 (^|\.)inmobicdn\.net$
 (^|\.)innity\.com$
+(^|\.)instabug\.com$
 (^|\.)intely\.cn$
 (^|\.)iperceptions\.com$
 (^|\.)ipinyou\.com$
@@ -761,6 +768,7 @@
 (^|\.)jisucn\.com$
 (^|\.)jpush\.cn$
 (^|\.)jusha\.com$
+(^|\.)juzilm\.com$
 (^|\.)kejet\.com$
 (^|\.)kejet\.net$
 (^|\.)keyrun\.cn$
@@ -771,6 +779,7 @@
 (^|\.)localytics\.com$
 (^|\.)lomark\.cn$
 (^|\.)lotuseed\.com$
+(^|\.)lrswl\.com$
 (^|\.)lufax\.com$
 (^|\.)madmini\.com$
 (^|\.)madserving\.com$
@@ -793,6 +802,7 @@
 (^|\.)mobisage\.cn$
 (^|\.)mobvista\.com$
 (^|\.)mopub\.com$
+(^|\.)moquanad\.com$
 (^|\.)mpush\.cn$
 (^|\.)mxpnl\.com$
 (^|\.)mydas\.mobi$
@@ -856,6 +866,7 @@
 (^|\.)tiqcdn\.com$
 (^|\.)trafficjam\.cn$
 (^|\.)trafficmp\.com$
+(^|\.)ueadlian\.com$
 (^|\.)ugvip\.com$
 (^|\.)ujian\.cc$
 (^|\.)ukeiae\.com$
@@ -870,6 +881,7 @@
 (^|\.)uyunad\.com$
 (^|\.)vamaker\.com$
 (^|\.)voiceads\.cn$
+(^|\.)voiceads\.com$
 (^|\.)vpon\.com$
 (^|\.)vungle\.cn$
 (^|\.)waps\.cn$
