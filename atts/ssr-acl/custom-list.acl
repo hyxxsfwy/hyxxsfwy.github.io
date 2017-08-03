@@ -6160,6 +6160,7 @@
 (^|\.)\w*telegram\w*\.\w*$
 (^|\.)\w*twitter\w*\.\w*$
 (^|\.)\w*tumblr\w*\.\w*$
+(^|\.)\w*avast\w*\.\w*$
 
 # Line
 (^|\.)line\.me$
