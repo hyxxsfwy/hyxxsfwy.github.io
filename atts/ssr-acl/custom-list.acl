@@ -2,7 +2,7 @@
 #
 # 下载地址：https://hyxxsfwy.github.io/atts/ssr-acl/custom-list.acl
 # 引用来源：https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/banAD.acl
-# 更新时间：2017.07.29
+# 更新时间：2017.08.03
 #
 # 参数解释：
 # [proxy_all] 默认代理
@@ -354,6 +354,9 @@
 (^|\.)float\.kankan\.com$
 (^|\.)logic\.cpm\.cm\.kankan\.com$
 
+# Yahoo
+(^|\.)beap\.gemini\.yahoo\.com$
+
 # Zhihu
 (^|\.)(sugar|zhihu-web-analytics|zhstatic)\.zhihu\.com$
 
@@ -556,7 +559,7 @@
 (^|\.)(33|c|pcd|alert)\.autohome\.com\.cn$
 (^|\.)(801|803|806|808|bdj|dol|click)\.(tianya|tianyaui)\.cn$
 (^|\.)(92x|its-dori)\.tumblr\.com$
-(^|\.)(adm|fund|stat)\.10jqka\.com\.cn$
+#(^|\.)(adm|eq|fund|ozone|stat|vaserviece)\.10jqka\.com\.cn$
 (^|\.)(ad|adadmin|ads)\.house365\.com$
 (^|\.)(ad|ads|counter)\.csdn\.net$
 (^|\.)(ad|analytics|click|ganjituiguang|sta|tralog)\.ganji\.com$
@@ -829,6 +832,7 @@
 (^|\.)p0y\.cn$
 (^|\.)pagechoice\.net$
 (^|\.)pingdom\.net$
+(^|\.)plugrush\.com$
 (^|\.)pro\.cn$
 (^|\.)publicidad\.net$
 (^|\.)publicidad\.tv$
@@ -6129,6 +6133,7 @@
 (^|\.)twitpic\.com$
 (^|\.)typekit\.net$
 (^|\.)blogblog\.com$
+(^|\.)amazonaws\.com$
 (^|\.)microsoft\.com$
 (^|\.)office365\.com$
 (^|\.)getpocket\.com$
@@ -6137,7 +6142,6 @@
 (^|\.)optimizely\.com$
 (^|\.)readitlater\.com$
 (^|\.)www\.akamai\.com$
-(^|\.)s3\.amazonaws\.com$
 (^|\.)fb.*\.akamaihd\.net$
 
 # 国外域名关键字
