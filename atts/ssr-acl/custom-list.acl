@@ -6145,6 +6145,7 @@
 (^|\.)fb.*\.akamaihd\.net$
 
 # 国外域名关键字
+(^|\.)\w*amazon\w*\.\w*$
 (^|\.)\w*dropbox\w*\.\w*$
 (^|\.)\w*facebook\w*\.\w*$
 (^|\.)\w*fbcdn\w*\.\w*$
