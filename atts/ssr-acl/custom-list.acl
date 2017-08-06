@@ -6143,6 +6143,7 @@
 (^|\.)readitlater\.com$
 (^|\.)www\.akamai\.com$
 (^|\.)fb.*\.akamaihd\.net$
+(^|\.)letscorp\.net$
 
 # 国外域名关键字
 (^|\.)\w*amazon\w*\.\w*$
