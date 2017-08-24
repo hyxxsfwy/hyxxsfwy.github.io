@@ -5914,57 +5914,6 @@
 [proxy_list]
 # 代理列表
 
-# 国外域名
-^.*\.hk$
-^.*\.tw$
-^.*\.sg$
-^.*\.jp$
-^.*\.kr$
-^.*\.uk$
-^.*\.us$
-
-# MyList
-(^|\.)ibm\.com$
-(^|\.)live\.com$
-(^|\.)adobe\.com$
-(^|\.)skype\.com$
-(^|\.)office\.com$
-(^|\.)typekit\.net$
-(^|\.)microsoft\.com$
-(^|\.)office365\.com$
-(^|\.)getpocket\.com$
-(^|\.)cnpolitics\.org$
-(^|\.)cloudfront\.net$
-(^|\.)optimizely\.com$
-(^|\.)readitlater\.com$
-(^|\.)www\.akamai\.com$
-(^|\.)fb.*\.akamaihd\.net$
-
-# 域名关键字
-(^|\.)\w*vpn\w*\.\w*$
-(^|\.)\w*avast\w*\.\w*$
-(^|\.)\w*amazon\w*\.\w*$
-(^|\.)\w*wikipedia\w*\.\w*$
-(^|\.)\w*wikimedia\w*\.\w*$
-
-# Line
-(^|\.)line\.me$
-(^|\.)line-cdn\.net$
-(^|\.)line-apps\.com$
-(^|\.)line\.naver\.jp$
-
-# MytvSUPER & Netflix
-(^|\.)\w*nowtv100\w*\.\w*$
-(^|\.)\w*rthklive\w*\.\w*$
-(^|\.)mytvsuper\.com$
-(^|\.)netflix\.com$
-(^|\.)netflix\.net$
-(^|\.)nflxext\.com$
-(^|\.)nflximg\.com$
-(^|\.)nflximg\.net$
-(^|\.)nflxvideo\.net$
-(^|\.)tvb\.com$
-
 # GFWList
 (^|\.)4tern\.com$
 (^|\.)adorama\.com$
@@ -9727,3 +9676,55 @@
 (^|\.)zyzc9\.com$
 (^|\.)zzcartoon\.com$
 (^|\.)phobos\.apple\.com$
+
+# 国外域名
+^.*\.hk$
+^.*\.tw$
+^.*\.sg$
+^.*\.jp$
+^.*\.kr$
+^.*\.uk$
+^.*\.us$
+
+# MyList
+(^|\.)ibm\.com$
+(^|\.)live\.com$
+(^|\.)adobe\.com$
+(^|\.)skype\.com$
+(^|\.)office\.com$
+(^|\.)ofweek\.com$
+(^|\.)typekit\.net$
+(^|\.)microsoft\.com$
+(^|\.)office365\.com$
+(^|\.)getpocket\.com$
+(^|\.)cnpolitics\.org$
+(^|\.)cloudfront\.net$
+(^|\.)optimizely\.com$
+(^|\.)readitlater\.com$
+(^|\.)www\.akamai\.com$
+(^|\.)fb.*\.akamaihd\.net$
+
+# 域名关键字
+(^|\.)\w*vpn\w*\.\w*$
+(^|\.)\w*avast\w*\.\w*$
+(^|\.)\w*amazon\w*\.\w*$
+(^|\.)\w*wikipedia\w*\.\w*$
+(^|\.)\w*wikimedia\w*\.\w*$
+
+# Line
+(^|\.)line\.me$
+(^|\.)line-cdn\.net$
+(^|\.)line-apps\.com$
+(^|\.)line\.naver\.jp$
+
+# MytvSUPER & Netflix
+(^|\.)\w*nowtv100\w*\.\w*$
+(^|\.)\w*rthklive\w*\.\w*$
+(^|\.)mytvsuper\.com$
+(^|\.)netflix\.com$
+(^|\.)netflix\.net$
+(^|\.)nflxext\.com$
+(^|\.)nflximg\.com$
+(^|\.)nflximg\.net$
+(^|\.)nflxvideo\.net$
+(^|\.)tvb\.com$
