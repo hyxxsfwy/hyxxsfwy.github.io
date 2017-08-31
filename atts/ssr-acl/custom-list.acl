@@ -44,7 +44,7 @@
 (^|\.)\w*tracking\w*\..*$
 (^|\.)\w*traffic\w*\..*$
 (^|\.)\w*uedas\w*\..*$
-#(^|\.)\w*umeng\w*\..*$
+(^|\.)\w*umeng\w*\..*$
 (^|\.)\w*usage\w*\..*$
 (^|\.)\w*wlmonitor\w*\..*$
 (^|\.)\w*zjtoolbar\w*\..*$
