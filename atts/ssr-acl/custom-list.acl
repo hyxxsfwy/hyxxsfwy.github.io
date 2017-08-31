@@ -2,7 +2,7 @@
 #
 # 下载地址：https://hyxxsfwy.github.io/atts/ssr-acl/custom-list.acl
 # 引用来源：https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/banAD.acl
-# 更新时间：2017.08.30
+# 更新时间：2017.08.31
 #
 # 参数解释：
 # [proxy_all] 默认代理
@@ -44,7 +44,7 @@
 (^|\.)\w*tracking\w*\..*$
 (^|\.)\w*traffic\w*\..*$
 (^|\.)\w*uedas\w*\..*$
-(^|\.)\w*umeng\w*\..*$
+#(^|\.)\w*umeng\w*\..*$
 (^|\.)\w*usage\w*\..*$
 (^|\.)\w*wlmonitor\w*\..*$
 (^|\.)\w*zjtoolbar\w*\..*$
