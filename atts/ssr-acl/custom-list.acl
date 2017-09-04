@@ -1071,6 +1071,7 @@
 
 # 国内域名 CustomList
 (^|\.)127\.net$
+(^|\.)cnbeta\.com$
 (^|\.)icourse163\.org$
 
 # TaoBao
