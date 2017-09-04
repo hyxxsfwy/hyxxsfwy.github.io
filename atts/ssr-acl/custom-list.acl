@@ -1071,7 +1071,6 @@
 
 # 国内域名 CustomList
 (^|\.)127\.net$
-(^|\.)cnbeta\.com$
 (^|\.)icourse163\.org$
 
 # TaoBao
@@ -9714,6 +9713,7 @@
 (^|\.)live\.com$
 (^|\.)adobe\.com$
 (^|\.)skype\.com$
+(^|\.)cnbeta\.com$
 (^|\.)office\.com$
 (^|\.)ofweek\.com$
 (^|\.)typekit\.net$
