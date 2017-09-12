@@ -2,7 +2,7 @@
 #
 # 下载地址：https://hyxxsfwy.github.io/atts/ssr-acl/custom-list.acl
 # 引用来源：https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/banAD.acl
-# 更新时间：2017.09.03
+# 更新时间：2017.09.12
 #
 # 参数解释：
 # [proxy_all] 默认代理
@@ -9730,20 +9730,10 @@
 (^|\.)zzcartoon\.com$
 (^|\.)phobos\.apple\.com$
 
-# 国外域名
-^.*\.im$
-^.*\.hk$
-^.*\.tw$
-^.*\.sg$
-^.*\.jp$
-^.*\.kr$
-^.*\.uk$
-^.*\.us$
-
 # MyList
-(^|\.)80s\.tw$
 (^|\.)ibm\.com$
 (^|\.)live\.com$
+(^|\.)gitter\.im$
 (^|\.)adobe\.com$
 (^|\.)skype\.com$
 (^|\.)cnbeta\.com$
@@ -9764,8 +9754,6 @@
 (^|\.)\w*vpn\w*\.\w*$
 (^|\.)\w*avast\w*\.\w*$
 (^|\.)\w*amazon\w*\.\w*$
-(^|\.)\w*wikipedia\w*\.\w*$
-(^|\.)\w*wikimedia\w*\.\w*$
 
 # Line
 (^|\.)line\.me$
