@@ -1,7 +1,9 @@
 #**********************************************************************
 #
 # 下载地址：https://hyxxsfwy.github.io/atts/ssr-acl/custom-list.acl
-# 引用来源：https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/banAD.acl
+# 引用来源：
+#   https://raw.githubusercontent.com/vokins/yhosts/master/hosts
+#   https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/banAD.acl
 # 更新时间：2017.09.12
 #
 # 参数解释：
@@ -341,9 +343,16 @@
 (^|\.)mo\.res\.wpscdn\.cn$
 (^|\.)news\.docer\.com$
 (^|\.)news\.op\.wpscdn\.cn$
+(^|\.)uid\.ksosoft\.com$
+(^|\.)event\.ksosoft\.com$
 (^|\.)pc\.uf\.ksosoft\.com$
 (^|\.)pixiu\.shangshufang\.ksosoft\.com$
 (^|\.)up\.wps\.kingsoft\.com$
+(^|\.)beha\.ksmobile\.com$
+(^|\.)dl\.cm\.ksmobile\.com$
+(^|\.)up\.cm\.ksmobile\.com$
+(^|\.)ws\.ksmobile\.net$
+(^|\.)ups\.ksmobile\.net$
 
 # Wi-Fi key
 (^|\.)(c|cdsget|news-imgpb|wifiapi\d\d|wkanc)\.51y5\.net$
@@ -489,28 +498,60 @@
 (^|\.)vv\.play\.aiseet\.atianqi\.com$
 
 # Youku & Tudou
-(^|\.)(actives|atm|dmapp|guanggaoad|hz|iyes|l|lstat|lvip|msg|mobilemsg|myes|pl|passport-log|stat|tdrec|wan|ykatr|ykrec|ykrectab)\.youku\.com$
-(^|\.)(adcontrol|adplay|goods|iwstat|nstat|stat|stats)\.tudou\.com$
-(^|\.)(ad|gamex)\.mobile\.youku\.com$
-(^|\.)(dev-push|push|sdk)\.m\.youku\.com$
-(^|\.)(p|r|v)\.l\.youku\.com$
-(^|\.)a-dxk\.play\.api\.3g\.youku\.com$
-(^|\.)ad\.api\.3g(\.tudou|\.youku)\.com$
+(^|\.)adp\.atm\.youku\.com$
+(^|\.)iyes\.youku\.com$
+(^|\.)m\.atm\.youku\.com$
+(^|\.)mf\.atm\.youku\.com$
+(^|\.)mobilemsg\.youku\.com$
+(^|\.)push\.m\.youku\.com$
+(^|\.)bsv\.atm\.youku\.com$
+(^|\.)count\.atm\.youku\.com$
+(^|\.)html\.atm\.youku\.com$
+(^|\.)ipm\.atm\.youku\.com$
+(^|\.)v2html\.atm\.youku\.com$
+(^|\.)val\.atm\.youku\.com$
+(^|\.)valb\.atm\.youku\.com$
+(^|\.)valc\.atm\.youku\.com$
+(^|\.)valf\.atm\.youku\.com$
+(^|\.)valp\.atm\.youku\.com$
+(^|\.)valt\.atm\.youku\.com$
+(^|\.)p\.l\.youku\.com$
+(^|\.)r\.l\.youku\.com$
+(^|\.)dmapp\.youku\.com$
+(^|\.)service\.danmu\.youku\.com$
+(^|\.)api\.gamex\.mobile\.youku\.com$
+(^|\.)myes\.youku\.com$
+(^|\.)ad\.api\.3g\.youku\.com$
 (^|\.)ad\.api\.mobile\.youku\.com$
-(^|\.)atm\.youku\.com$
 (^|\.)b\.smartvideo\.youku\.com$
+(^|\.)c\.l\.youku\.com$
 (^|\.)c\.yes\.youku\.com$
-(^|\.)dl\.g\.youku\.com$
-(^|\.)e\.stat\.ykimg\.com$
-(^|\.)hudong\.pl\.youku\.com$
-(^|\.)l\.ykimg\.com$
-(^|\.)p-log\.ykimg\.com$
-(^|\.)p\.l\.ykimg\.com$
+(^|\.)cm\.atm\.youku\.com$
+(^|\.)cm\.miaozhen\.atm\.youku\.com$
+(^|\.)guanggaoad\.youku\.com$
+(^|\.)irs01\.youku\.com$
+(^|\.)lstat\.youku\.com$
+(^|\.)m\.yes\.youku\.com$
+(^|\.)mb\.atm\.youku\.com$
+(^|\.)mi\.atm\.youku\.com$
+(^|\.)miaozhen\.atm\.youku\.com$
+(^|\.)mo\.atm\.youku\.com$
+(^|\.)mp\.atm\.youku\.com$
+(^|\.)notify\.youku\.com$
+(^|\.)passport-log\.youku\.com$
+(^|\.)player\.lstat\.youku\.com$
 (^|\.)s\.p\.youku\.com$
+(^|\.)sdk\.api\.gamex\.mobile\.youku\.com$
+(^|\.)stat\.youku\.com$
+(^|\.)static\.atm\.youku\.com$
 (^|\.)store\.tv\.api\.3g\.youku\.com$
 (^|\.)store\.xl\.api\.3g\.youku\.com$
-(^|\.)test\.ott\.youku\.com$
-(^|\.)val\.api\.youku\.com$
+(^|\.)urchin\.lstat\.youku\.com$
+(^|\.)v\.l\.youku\.com$
+(^|\.)valo\.atm\.youku\.com$
+(^|\.)wan\.youku\.com$
+(^|\.)ad\.api\.3g\.tudou\.com$
+(^|\.)stats\.tudou\.com
 117.177.248.17/32
 117.177.248.41/32
 223.87.176.139/32
