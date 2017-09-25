@@ -2,7 +2,7 @@
 #
 # 下载地址：https://hyxxsfwy.github.io/atts/ssr-acl/custom-list.acl
 # 引用来源：https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/banAD.acl
-# 更新时间：2017.09.12
+# 更新时间：2017.09.25
 #
 # 参数解释：
 # [proxy_all] 默认代理
@@ -1080,6 +1080,9 @@
 #**********************************************************************
 [bypass_list]
 # 直连列表
+
+# CN域名直连
+^.*\.cn$
 
 # 国内域名 CustomList
 (^|\.)127\.net$
@@ -6510,7 +6513,7 @@
 (^|\.)alvinalexander\.com$
 (^|\.)alwaysdata\.com$
 (^|\.)alwaysdata\.net$
-#(^|\.)amazon\.com$
+(^|\.)amazon\.com$
 (^|\.)www1\.american\.edu$
 (^|\.)americangreencard\.com$
 (^|\.)www\.americorps\.gov$
