@@ -6513,7 +6513,7 @@
 (^|\.)alvinalexander\.com$
 (^|\.)alwaysdata\.com$
 (^|\.)alwaysdata\.net$
-(^|\.)amazon\.com$
+(^|\.).*amazon\.com$
 (^|\.)www1\.american\.edu$
 (^|\.)americangreencard\.com$
 (^|\.)www\.americorps\.gov$
