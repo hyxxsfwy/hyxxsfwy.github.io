@@ -6113,7 +6113,6 @@
 (^|\.)lsxszzg\.com$
 (^|\.)china-mmm\.net$
 (^|\.)china-mmm\.sa\.com$
-(^|\.)s3-ap-northeast-1\.amazonaws\.com$
 (^|\.)avmo\.pw$
 (^|\.)avmoo\.com$
 (^|\.)avmoo\.net$
@@ -6513,7 +6512,6 @@
 (^|\.)alvinalexander\.com$
 (^|\.)alwaysdata\.com$
 (^|\.)alwaysdata\.net$
-(^|\.).*amazon\.com$
 (^|\.)www1\.american\.edu$
 (^|\.)americangreencard\.com$
 (^|\.)www\.americorps\.gov$
@@ -9781,6 +9779,7 @@
 # 域名关键字
 (^|\.)\w*vpn\w*\.\w*$
 (^|\.)\w*avast\w*\.\w*$
+(^|\.)\w*amazon\w*\.\w*$
 
 # Line
 (^|\.)line\.me$
