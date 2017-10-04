@@ -2,7 +2,7 @@
 #
 # 下载地址：https://hyxxsfwy.github.io/atts/ssr-acl/custom-list.acl
 # 引用来源：https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/banAD.acl
-# 更新时间：2017.09.25
+# 更新时间：2017.10.05
 #
 # 参数解释：
 # [proxy_all] 默认代理
@@ -1004,7 +1004,6 @@
 (^|\.)adsymptotic\.com$
 (^|\.)am15\.net$
 (^|\.)bepolite\.eu$
-(^|\.)co\.jp$
 (^|\.)criteo\.com$
 (^|\.)directrev\.com$
 (^|\.)dumedia\.ru$
@@ -7466,7 +7465,6 @@
 (^|\.)fscked\.org$
 (^|\.)fsurf\.com$
 (^|\.)ftchinese\.com$
-(^|\.)www\.ftchinese\.com$
 (^|\.)fucd\.com$
 (^|\.)fuckcnnic\.net$
 (^|\.)fuckgfw\.org$
