@@ -9850,17 +9850,12 @@
 
 # MyList
 (^|\.)ibm\.com$
-(^|\.)live\.com$
 (^|\.)gitter\.im$
 (^|\.)adobe\.com$
-(^|\.)skype\.com$
 (^|\.)cnbeta\.com$
-(^|\.)office\.com$
 (^|\.)ofweek\.com$
 (^|\.)typekit\.net$
-(^|\.)outlook\.com$
 (^|\.)microsoft\.com$
-(^|\.)office365\.com$
 (^|\.)getpocket\.com$
 (^|\.)cnpolitics\.org$
 (^|\.)cloudfront\.net$
