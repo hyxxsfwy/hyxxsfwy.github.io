@@ -9853,6 +9853,7 @@
 (^|\.)live\.com$
 (^|\.)gitter\.im$
 (^|\.)adobe\.com$
+(^|\.)apple\.com$
 (^|\.)skype\.com$
 (^|\.)cnbeta\.com$
 (^|\.)office\.com$
