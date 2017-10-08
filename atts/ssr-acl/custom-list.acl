@@ -173,8 +173,12 @@
 (^|\.)ad\.duomi\.com$
 (^|\.)boxshows\.com$
 
-# Facebook
+### Facebook
+(^|\.)ads.*\.facebook\.com$
+(^|\.)creative.*\.fbcdn\.net$
 (^|\.)staticxx\.facebook\.com$
+(^|\.)creative.*\.facebook\.com$
+(^|\.)fbcdn-creative.*\.akamaihd\.net$
 
 # Fang
 (^|\.)click1n\.soufun\.com$
@@ -330,7 +334,7 @@
 (^|\.)fengbuy\.com$
 (^|\.)we\.tm$
 
-# WPS Office
+### WPS Office
 (^|\.)(bannera|rating6|cloudservice.*)\.kingsoft-office-service\.com$
 (^|\.)(docerad|gou|info|minfo|notify|pcfg|push|wpsweb-dc)\.wps\.cn$
 (^|\.)ad\.docer\.wps\.cn$
@@ -339,7 +343,11 @@
 (^|\.)counter\.kingsoft\.com$
 (^|\.)dl\.op\.wpscdn\.cn$
 (^|\.)hoplink\.ksosoft\.com$
+(^|\.)ws\.ksmobile\.net$
+(^|\.)ups\.ksmobile\.net$
 (^|\.)ic\.ksosoft\.com$
+(^|\.)uid\.ksosoft\.com$
+(^|\.)event\.ksosoft\.com$
 (^|\.)img.*\.mini\.cache\.wps\.cn$
 (^|\.)img\.gou\.wpscdn\.cn$
 (^|\.)ios-informationplatform\.wps\.cn$
