@@ -175,6 +175,7 @@
 
 ### Facebook
 (^|\.)ads.*\.facebook\.com$
+(^|\.)graph\.facebook\.com$
 (^|\.)creative.*\.fbcdn\.net$
 (^|\.)staticxx\.facebook\.com$
 (^|\.)creative.*\.facebook\.com$
@@ -337,6 +338,7 @@
 ### WPS Office
 (^|\.)(bannera|rating6|cloudservice.*)\.kingsoft-office-service\.com$
 (^|\.)(docerad|gou|info|minfo|notify|pcfg|push|wpsweb-dc)\.wps\.cn$
+(^|\.)movip\.wps\.com$
 (^|\.)ad\.docer\.wps\.cn$
 (^|\.)adm\.zookingsoft\.com$
 (^|\.)bole\.shangshufang\.ksosoft\.com$
