@@ -12,7 +12,7 @@ function MyFindProxyForURL(url, host) {
     }
 
     if (shExpMatch(host, '*.google*.*')) {
-        return 'HTTPS sin.link.ac.cn:152;HTTPS tokyo2.link.ac.cn:1152;DIRECT';
+        return 'HTTPS tokyo.link.ac.cn:152;HTTPS tokyo2.link.ac.cn:1152;DIRECT';
     }
 
     return 'DIRECT';
