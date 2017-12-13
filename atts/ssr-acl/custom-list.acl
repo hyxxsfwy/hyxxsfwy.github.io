@@ -1210,8 +1210,9 @@
 [bypass_list]
 # 直连列表
 
-# CN域名直连
+# 指定域名直连
 ^.*\.cn$
+(^|\.)bilibili\.com$
 
 # TaoBao
 (^|\.)alibaba\.com$
