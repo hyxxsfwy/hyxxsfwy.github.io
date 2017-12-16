@@ -2,6 +2,83 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://hyxxsfwy.github.io/atts/ubuntu-server/transmission-daemon.json</loc>
+    
+    <lastmod>2017-12-16T17:17:15.140Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hyxxsfwy.github.io/atts/ubuntu-server/bypy-config/bypy-vd3.json</loc>
+    
+    <lastmod>2017-11-20T12:39:20.629Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hyxxsfwy.github.io/atts/ubuntu-server/bypy-config/bypy-vd2.json</loc>
+    
+    <lastmod>2017-11-20T12:39:10.700Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hyxxsfwy.github.io/atts/ubuntu-server/bypy-config/bypy-vd1.json</loc>
+    
+    <lastmod>2017-11-20T12:39:00.140Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hyxxsfwy.github.io/atts/ubuntu-server/bypy-config/bypy-wk2.json</loc>
+    
+    <lastmod>2017-11-20T12:38:41.950Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hyxxsfwy.github.io/atts/ubuntu-server/bypy-config/bypy-cs.json</loc>
+    
+    <lastmod>2017-11-20T12:38:27.934Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hyxxsfwy.github.io/atts/ubuntu-server/bypy-config/bypy-wk1.json</loc>
+    
+    <lastmod>2017-11-20T12:38:08.892Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hyxxsfwy.github.io/atts/ubuntu-server/bypy-config/bypy-aud.json</loc>
+    
+    <lastmod>2017-11-20T12:37:51.940Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hyxxsfwy.github.io/atts/ubuntu-server/bypy-config/bypy-oc.json</loc>
+    
+    <lastmod>2017-11-20T12:36:49.824Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hyxxsfwy.github.io/atts/ubuntu-server/bypy-config/bypy-doc.json</loc>
+    
+    <lastmod>2017-11-20T12:36:34.480Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hyxxsfwy.github.io/atts/ubuntu-server/bypy-config/bypy-hyxx.json</loc>
+    
+    <lastmod>2017-11-20T12:36:15.760Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://hyxxsfwy.github.io/atts/ubuntu-server/v2ray-config.json</loc>
     
     <lastmod>2017-11-14T04:49:22.052Z</lastmod>
@@ -9,86 +86,9 @@
   </url>
   
   <url>
-    <loc>https://hyxxsfwy.github.io/atts/ubuntu-server/bypy-config/bypy-wk2.json</loc>
-    
-    <lastmod>2017-09-17T09:37:30.787Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hyxxsfwy.github.io/atts/ubuntu-server/bypy-config/bypy-wk1.json</loc>
-    
-    <lastmod>2017-09-17T09:37:19.740Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hyxxsfwy.github.io/atts/ubuntu-server/bypy-config/bypy-vd3.json</loc>
-    
-    <lastmod>2017-09-17T09:37:05.478Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hyxxsfwy.github.io/atts/ubuntu-server/bypy-config/bypy-oc.json</loc>
-    
-    <lastmod>2017-09-17T09:36:42.499Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hyxxsfwy.github.io/atts/ubuntu-server/bypy-config/bypy-doc.json</loc>
-    
-    <lastmod>2017-09-17T09:36:02.725Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hyxxsfwy.github.io/atts/ubuntu-server/bypy-config/bypy-cs.json</loc>
-    
-    <lastmod>2017-09-17T09:31:31.479Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hyxxsfwy.github.io/atts/ubuntu-server/bypy-config/bypy-aud.json</loc>
-    
-    <lastmod>2017-09-17T09:31:06.835Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hyxxsfwy.github.io/atts/ubuntu-server/bypy-config/bypy-vd1.json</loc>
-    
-    <lastmod>2017-09-17T09:24:17.395Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hyxxsfwy.github.io/atts/ubuntu-server/bypy-config/bypy-hyxx.json</loc>
-    
-    <lastmod>2017-09-17T09:22:08.270Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://hyxxsfwy.github.io/atts/ubuntu-server/resilio-sync.json</loc>
     
     <lastmod>2017-09-16T18:34:27.801Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hyxxsfwy.github.io/atts/ubuntu-server/bypy-config/bypy-vd2.json</loc>
-    
-    <lastmod>2017-09-15T12:13:41.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hyxxsfwy.github.io/atts/ubuntu-server/transmission-daemon.json</loc>
-    
-    <lastmod>2017-05-21T08:32:12.810Z</lastmod>
     
   </url>
   
