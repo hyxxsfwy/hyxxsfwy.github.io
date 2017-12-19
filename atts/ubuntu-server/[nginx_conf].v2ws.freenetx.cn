@@ -24,8 +24,10 @@ server {
     ssl_certificate      /var/www/v2ws.freenetx.cn/v2ws.freenetx.cn.crt;
     ssl_certificate_key  /var/www/v2ws.freenetx.cn/v2ws.freenetx.cn.key;
     ssl_protocols        TLSv1.2;
-    ssl_ciphers          HIGH:!aNULL:!MD5;
-
+    ssl_prefer_server_ciphers on;
+    ssl_ciphers          HIGH:!aNULL:!eNULL:!NULL:!DH:!EDH:!3DES:!MD5:!PSK:!RC4:!EXPORT:!CAMELLIA;
+    add_header           Strict-Transport-Security "max-age=31536000";
+    
     # Note: You should disable gzip for SSL traffic.
     # See: https://bugs.debian.org/773332
     #
@@ -58,7 +60,33 @@ server {
         proxy_set_header   Connection "upgrade";
         proxy_set_header   Host $http_host;
     }
-    
     error_page 400 = https://v2ws.freenetx.cn/404;
     
+    location /transmission/web/ {
+        proxy_read_timeout 300;
+        proxy_pass_header  X-Transmission-Session-Id;
+        proxy_set_header   X-Forwarded-Host $host;
+        proxy_set_header   X-Forwarded-Server $host;
+        proxy_set_header   X-Forwarded-For $proxy_add_x_forwarded_for;
+       
+        # if you changed the port number for transmission daemon, then adjust the folllowing line
+        proxy_pass         http://127.0.0.1:9091/transmission/web/;
+    }
+    location /transmission/rpc {
+        proxy_pass         http://127.0.0.1:9091/transmission/rpc;
+    }
+    location /transmission/upload {
+        proxy_pass         http://127.0.0.1:9091/transmission/upload;
+    }
+    
+    location /gui/ {
+        proxy_read_timeout 300;
+        proxy_pass_header  X-Requested-With;
+        proxy_set_header   X-Forwarded-Host $host;
+        proxy_set_header   X-Forwarded-Server $host;
+        proxy_set_header   X-Forwarded-For $proxy_add_x_forwarded_for;
+       
+        # if you changed the port number for resilio-sync web gui, then adjust the folllowing line
+        proxy_pass         http://127.0.0.1:8899/gui/;
+    }
 }
