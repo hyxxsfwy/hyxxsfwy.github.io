@@ -1212,7 +1212,6 @@
 
 # 指定域名直连
 ^.*\.cn$
-(^|\.)ipip\.net$
 (^|\.)bilibili\.com$
 
 # TaoBao
@@ -6170,7 +6169,6 @@
 # 代理列表
 
 # MyList
-(^|\.)ipip\.net$
 (^|\.)ibm\.com$
 (^|\.)live\.com$
 (^|\.)gitter\.im$
@@ -6190,6 +6188,7 @@
 (^|\.)optimizely\.com$
 (^|\.)readitlater\.com$
 (^|\.)www\.akamai\.com$
+(^|\.)w2ws\.freenetx\.cn$
 (^|\.)fb.*\.akamaihd\.net$
 
 # 域名关键字
