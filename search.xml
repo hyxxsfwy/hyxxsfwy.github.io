@@ -289,7 +289,7 @@
 <p>这个例子中，<code>grep KR</code>用到了韩国的 ISO 标准国家代码<code>KR</code>，所有的 ISO 标准国家代码参见 Wiki：<a href="https://zh.wikipedia.org/wiki/ISO_3166-1" target="_blank" rel="external">https://zh.wikipedia.org/wiki/ISO_3166-1</a></p>
 </li>
 <li><p>开始扫描。Windows 下，直接双击运行<code>checkip.bat</code>，扫描目标国家的所有IP段，确认其是否为 GGC 服务器。扫描超时参数可以通过修改<code>python/checkip.py</code>文件里</p>
-<figure class="highlight makefile"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">g_conntimeout = 5</div><div class="line">g_handshaketimeout = 7</div></pre></td></tr></table></figure>
+<figure class="highlight ini"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="attr">g_conntimeout</span> = <span class="number">5</span></div><div class="line"><span class="attr">g_handshaketimeout</span> = <span class="number">7</span></div></pre></td></tr></table></figure>
 <p>的值来自定义，单位为<code>s</code>，其他参数可参考代码注释自行调整。</p>
 </li>
 <li>提取有效IP段。Windows下直接双击运行<code>!ptools.bat</code>，按照提示操作，选 2：<code>提取 ip_tmpok.txt 中有效IP的IP段, 并生成 ip_output.txt</code>，并设定延迟过滤阈值，如<code>400ms</code>。</li>
