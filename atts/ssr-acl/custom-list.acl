@@ -1091,7 +1091,7 @@
 (^|\.)win-stock\.com\.cn$
 
 ### 运营商广告
-(^|\.)\w\w(\w|)dnserror\d(\d|)\.wo\.com\.cn
+(^|\.)\w\w(\w|)dnserror\d(\d|)\.wo\.com\.cn$
 (^|\.)114so\.cn$
 (^|\.)go\.10086\.cn$
 (^|\.)navi\.gd\.chinamobile\.com$
