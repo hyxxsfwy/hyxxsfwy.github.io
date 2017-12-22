@@ -1213,6 +1213,8 @@
 # 指定域名直连
 ^.*\.cn$
 (^|\.)bilibili\.com$
+^.*mtalk.*\.google\.com$
+^.*gtalk.*\.google\.com$
 
 # TaoBao
 (^|\.)alibaba\.com$
