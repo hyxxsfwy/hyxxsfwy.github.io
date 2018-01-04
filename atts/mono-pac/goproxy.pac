@@ -1,10 +1,9 @@
 function FindProxyForURL(s, a) {
-    if (url.substring(0, 3)=="ws:" ||
-        url.substring(0, 4)=="wss:" ||
-        url.substring(0, 4)=="ftp:")
-    return "i";
-    
     if (isPlainHostName(a)) return i;
+    if (s.substring(0, 3)=="ws:" ||
+        s.substring(0, 4)=="wss:" ||
+        s.substring(0, 4)=="ftp:")
+    return "i";
     
     var f = a,
     u = 0;
