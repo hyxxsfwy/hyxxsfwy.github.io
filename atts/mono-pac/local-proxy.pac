@@ -28,7 +28,7 @@ function FindProxyForURL(s, a) {
     while (L + 1 < p);
     return d - v[L] >> w[L] === 0 ? i: r
 }
-var r = "SOCKS5 127.0.0.1:10086",
+var r = "SOCKS5 127.0.0.1:10080",
 i = "DIRECT",
 t = {
     "qin.io": 1,
