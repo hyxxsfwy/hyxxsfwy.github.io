@@ -1,39 +1,40 @@
-function FindProxyForURL(s, a) {
-    if (isPlainHostName(a)) return i;
-    if (s.substring(0, 3)=="ws:" ||
-        s.substring(0, 4)=="wss:" ||
-        s.substring(0, 4)=="ftp:")
-    return "i";
+function FindProxyForURL(url, host) {
+    if (isPlainHostName(host)) return direct;
+    if (url.substring(0, 3)=="ws:" ||
+        url.substring(0, 4)=="wss:" ||
+        url.substring(0, 4)=="ftp:")
+    return "direct";
     
-    var f = a,
+    var h = host,
     u = 0;
     do {
-        if (t.hasOwnProperty(f)) return i;
-        if (e.hasOwnProperty(f)) return r;
-        u = a.indexOf(".", u) + 1, f = a.substring(u)
+        if (chnlist.hasOwnProperty(h)) return direct;
+        if (gfwlist.hasOwnProperty(h)) return proxy;
+        u = host.indexOf(".", u) + 1, h = host.substring(u)
     } while ( u > 0 );
     
-    var o = dnsResolve(a);
-    if (!o) return r;
-    if (o.indexOf(":") >= 0) return i;
+    var o = dnsResolve(host);
+    if (!o) return proxy;
+    if (o.indexOf(":") >= 0) return direct;
     var l = o.split("."),
     d = (255 & l[1]) << 8 | 255 & l[2],
     h = l[0],
     v = _[h],
     w = n[h];
-    if (0 === v) return r;
-    if (16 === w) return i;
+    if (0 === v) return proxy;
+    if (16 === w) return direct;
     var L = 0,
     p = v.length,
     O = p >> 1;
     do v[O] > d ? p = O: L = O,
     O = L + p >> 1;
     while (L + 1 < p);
-    return d - v[L] >> w[L] === 0 ? i: r
+    return d - v[L] >> w[L] === 0 ? direct: proxy
 }
-var r = "PROXY 127.0.0.1:8087",
-i = "DIRECT",
-t = {
+
+var proxy = "PROXY 127.0.0.1:8087",
+direct = "DIRECT",
+chnlist = {
     "qin.io": 1,
     "sinaimg.com": 1,
     "sandai.net": 1,
@@ -255,7 +256,7 @@ t = {
     "alipayobjects.com": 1,
     "overcast.fm": 1
 },
-e = {
+gfwlist = {
     "corumcollege.com": 1,
     "4shared.com": 1,
     "fanqianghou.com": 1,
