@@ -2,7 +2,7 @@
 #
 # 下载地址：https://hyxxsfwy.github.io/atts/ssr-acl/custom-list.acl
 # 引用来源：https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/banAD.acl
-# 更新时间：2017.12.11
+# 更新时间：2017.01.15
 #
 # 参数解释：
 # [proxy_all] 默认代理
@@ -190,7 +190,6 @@
 (^|\.)tongji\.home\.soufun\.com$
 
 # Google
-(^|\.)2mdn\.net$
 (^|\.)admob\.com$
 (^|\.)ads\.gmodules\.com$
 (^|\.)ads\.google\.com$
@@ -217,7 +216,7 @@
 (^|\.)stat\.m\.jd\.com$
 
 # Kugou
-(^|\.)(d|downmobile|fanxing|gad|game|gg|install|install2|kgmobilestat|minidcsc|mo|mobilelog|mvads|p|rtmonitor|sdn|tj)\.kugou\.com$
+(^|\.)(adserviceretry|bssdlbig|d|downmobile|fanxing|gad|game|gg|install|install2|kgmobilestat|minidcsc|mo|mobilelog|mvads|p|rtmonitor|sdn|tj)\.kugou\.com$
 (^|\.)(msg|push|update)\.mobile\.kugou\.com$
 (^|\.)ads\.service\.kugou\.com$
 (^|\.)gcapi\.sy\.kugou\.com$
@@ -376,7 +375,17 @@
 (^|\.)upgrade\.xl9\.xunlei\.com$
 
 # Yahoo
-(^|\.)beap\.gemini\.yahoo\.com$
+(^|\.)(ads|adserver|adss|analytics|beap-bc|comet|geo|gemini|p3p|ybp)\.yahoo\.com$
+(^|\.)(analytics|locdrop|onepush)\.query\.yahoo\.com$
+(^|\.)(ard|ane|yads)\.yahoo\.co\.jp$
+(^|\.)(js-apac-ss|partnerads)\.ysm\.yahoo\.com$
+(^|\.)ad\.wretch\.cc$
+(^|\.)clicks\.beap\.bc\.yahoo\.com$
+(^|\.)doubleplay-conf-yql\.media\.yahoo\.com$
+(^|\.)flurry\.com$
+(^|\.)m\.yap\.yahoo\.com$
+(^|\.)uservoice\.com$
+(^|\.)ws\.progrss\.yahoo\.com$
 
 # Zhihu
 (^|\.)(sugar|zhihu-web-analytics|zhstatic)\.zhihu\.com$
@@ -1015,6 +1024,7 @@
 (^|\.)adnxs\.com$
 (^|\.)adriver\.ru$
 (^|\.)adroll\.com$
+(^|\.)adservice\.com$
 (^|\.)adsymptotic\.com$
 (^|\.)airpush\.com$
 (^|\.)am15\.net$
@@ -1045,6 +1055,7 @@
 (^|\.)inmobi\.com$
 (^|\.)jizzads\.com$
 (^|\.)juicyads\.com$
+(^|\.)leadbolt\.com$
 (^|\.)leadbolt\.net$
 (^|\.)leadboltads\.net$
 (^|\.)leadboltapps\.net$
@@ -6333,8 +6344,10 @@
 (^|\.)zh\.wikipedia\.org$
 
 # Line
+(^|\.)lin\.ee$
 (^|\.)line\.me$
 (^|\.)line-cdn\.net$
+(^|\.)line-scdn\.net$
 (^|\.)line-apps\.com$
 (^|\.)line\.naver\.jp$
 
