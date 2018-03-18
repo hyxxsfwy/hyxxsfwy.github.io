@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://hyxxsfwy.github.io/about/index.html</loc>
+    
+    <lastmod>2018-03-18T04:09:22.519Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://hyxxsfwy.github.io/2016/01/15/Hexo-Markdown-%E7%AE%80%E6%98%8E%E8%AF%AD%E6%B3%95%E6%89%8B%E5%86%8C/</loc>
     
     <lastmod>2017-05-19T19:44:09.367Z</lastmod>
@@ -33,13 +40,6 @@
     <loc>https://hyxxsfwy.github.io/2016/06/01/%E3%80%90%E8%BD%AC%E3%80%91%E8%BE%B9%E4%BF%A1%E9%81%93%E6%94%BB%E5%87%BB%EF%BC%8C%E4%BB%8E%E7%B1%B3%E7%89%B9%E5%B0%BC%E5%85%8B%E4%BC%A0%E5%A5%87%E9%87%8D%E7%8E%B0%E8%AF%B4%E8%B5%B7/</loc>
     
     <lastmod>2016-06-18T12:46:16.796Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hyxxsfwy.github.io/about/index.html</loc>
-    
-    <lastmod>2016-06-06T04:08:20.805Z</lastmod>
     
   </url>
   
