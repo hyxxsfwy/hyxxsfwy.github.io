@@ -6,14 +6,23 @@ if ((host == window.location.host) && (window.location.protocol != "https:"))
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-ga('create','UA-51773802-2','auto');ga('send','pageview');</script></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">【转】现代密码学实践指南【2015年】</h1><a id="logo" href="/.">Mobilicorpus</a><p class="description">幻影显形 | Keep Curiosity</p></div><div id="nav-menu"><a href="/." class="current"><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a></div></div><div id="layout" class="pure-g"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">【转】现代密码学实践指南【2015年】</h1><div class="post-meta">Apr 15, 2017<span> | </span><span class="category"><a href="/categories/转载/">转载</a></span><script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span></div><a data-disqus-identifier="2017/04/15/【转】现代密码学实践指南-2015年/" href="/2017/04/15/【转】现代密码学实践指南-2015年/#disqus_thread" class="disqus-comment-count"></a><div class="clear"><div id="toc" class="toc-article"><div class="toc-title">文章目录</div><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#加密数据"><span class="toc-number">1.</span> <span class="toc-text">加密数据</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#对称密钥长度"><span class="toc-number">2.</span> <span class="toc-text">对称密钥长度</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#对称签名"><span class="toc-number">3.</span> <span class="toc-text">对称签名</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Hashing-HMAC-算法"><span class="toc-number">4.</span> <span class="toc-text">Hashing/HMAC 算法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#随机ID"><span class="toc-number">5.</span> <span class="toc-text">随机ID</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#密码处理"><span class="toc-number">6.</span> <span class="toc-text">密码处理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#非对称加密"><span class="toc-number">7.</span> <span class="toc-text">非对称加密</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#非对称签名"><span class="toc-number">8.</span> <span class="toc-text">非对称签名</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Diffie-Hellman-密钥交换"><span class="toc-number">9.</span> <span class="toc-text">Diffie-Hellman 密钥交换</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#网站安全"><span class="toc-number">10.</span> <span class="toc-text">网站安全</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#客户端-服务器结构的应用程序的安全"><span class="toc-number">11.</span> <span class="toc-text">客户端-服务器结构的应用程序的安全</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#在线备份"><span class="toc-number">12.</span> <span class="toc-text">在线备份</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#名词解释"><span class="toc-number">13.</span> <span class="toc-text">名词解释</span></a></li></ol></div></div><div class="post-content"><hr>
-<p>本文介绍目前现代密码学的最先进技术，<br>前半部分主要翻译自  <a href="https://gist.github.com/tqbf/be58d2d39690c3b366ad" target="_blank" rel="noopener">《Cryptographic Right Answers》</a>，附上收集的资料，和byron个人的理解。</p>
-<p>密码学理论艰深，概念繁多，本人知识水平有限，错误难免，如果您发现错误，请务必指出，非常感谢! </p>
+ga('create','UA-51773802-2','auto');ga('send','pageview');</script></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">【转】现代密码学实践指南【2015年】</h1><a id="logo" href="/.">Mobilicorpus</a><p class="description">幻影显形 | Keep Curiosity</p></div><div id="nav-menu"><a href="/." class="current"><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a></div></div><div id="layout" class="pure-g"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">【转】现代密码学实践指南【2015年】</h1><div class="post-meta">Apr 15, 2017<span> | </span><span class="category"><a href="/categories/转载/">转载</a></span><script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span></div><a data-disqus-identifier="2017/04/15/【转】现代密码学实践指南-2015年/" href="/2017/04/15/【转】现代密码学实践指南-2015年/#disqus_thread" class="disqus-comment-count"></a><div class="clear"><div id="toc" class="toc-article"><div class="toc-title">文章目录</div><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#加密数据"><span class="toc-number">1.</span> <span class="toc-text">加密数据</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#对称密钥长度"><span class="toc-number">2.</span> <span class="toc-text">对称密钥长度</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#对称签名"><span class="toc-number">3.</span> <span class="toc-text">对称签名</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#hashing-hmac-算法"><span class="toc-number">4.</span> <span class="toc-text">Hashing/HMAC 算法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#随机id"><span class="toc-number">5.</span> <span class="toc-text">随机ID</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#密码处理"><span class="toc-number">6.</span> <span class="toc-text">密码处理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#非对称加密"><span class="toc-number">7.</span> <span class="toc-text">非对称加密</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#非对称签名"><span class="toc-number">8.</span> <span class="toc-text">非对称签名</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#diffie-hellman-密钥交换"><span class="toc-number">9.</span> <span class="toc-text">Diffie-Hellman 密钥交换</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#网站安全"><span class="toc-number">10.</span> <span class="toc-text">网站安全</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#客户端-服务器结构的应用程序的安全"><span class="toc-number">11.</span> <span class="toc-text">客户端-服务器结构的应用程序的安全</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#在线备份"><span class="toc-number">12.</span> <span class="toc-text">在线备份</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#名词解释"><span class="toc-number">13.</span> <span class="toc-text">名词解释</span></a></li></ol></div></div><div class="post-content"><hr>
+<p>本文介绍目前现代密码学的最先进技术，<br>
+前半部分主要翻译自  <a href="https://gist.github.com/tqbf/be58d2d39690c3b366ad" target="_blank" rel="noopener">《Cryptographic Right Answers》</a>，附上收集的资料，和byron个人的理解。</p>
+<p>密码学理论艰深，概念繁多，本人知识水平有限，错误难免，如果您发现错误，请务必指出，非常感谢!</p>
 <hr>
 <p><strong>下文分类介绍在各种适用场景下，你应该使用的现代密码学算法</strong></p>
-<h3 id="加密数据"><a href="#加密数据" class="headerlink" title="加密数据"></a>加密数据</h3><p>按照优先级，应该选择:<br>(1)   首选 NaCl库，或者libsodium库，使用里面的crypto_secretbox()/crypto_secretbox_open() 函数<br>(2)   Chacha20-Poly1305 算法<br>(3)   AES-GCM 算法</p>
+<h3 id="加密数据">加密数据</h3>
+<p>按照优先级，应该选择:<br>
+(1)   首选 NaCl库，或者libsodium库，使用里面的crypto_secretbox()/crypto_secretbox_open() 函数<br>
+(2)   Chacha20-Poly1305 算法<br>
+(3)   AES-GCM 算法</p>
 <p>适用场景:当你需要避免把明文数据在网络上传输的时候。</p>
-<p>以上3种算法，都是AEAD类的算法，AEAD是2015年最好的选择。<br>其中的(2)和(3)在结构上类似：一个流加密模式的算法，配合一个多项式结构的MAC。<br>(2)是一个流加密算法，配合一个为通用cpu优化的MAC算法，<br>对密码学库的实现者来说，Poly1305也比GCM更容易安全地实现。<br>AES-GCM是工业标准(TLS目前主要用的就是AES-GCM)，现代CPU通常都有专门为AES-GCM设计的硬件指令，但是在没有硬件指令支持的CPU上(比如32位的arm)，(3)性能低于(2)。</p>
+<p>以上3种算法，都是AEAD类的算法，AEAD是2015年最好的选择。<br>
+其中的(2)和(3)在结构上类似：一个流加密模式的算法，配合一个多项式结构的MAC。<br>
+(2)是一个流加密算法，配合一个为通用cpu优化的MAC算法，<br>
+对密码学库的实现者来说，Poly1305也比GCM更容易安全地实现。<br>
+AES-GCM是工业标准(TLS目前主要用的就是AES-GCM)，现代CPU通常都有专门为AES-GCM设计的硬件指令，但是在没有硬件指令支持的CPU上(比如32位的arm)，(3)性能低于(2)。</p>
 <p>此外，应该</p>
 <ul>
 <li>避免AES-CBC</li>
@@ -22,7 +31,8 @@ ga('create','UA-51773802-2','auto');ga('send','pageview');</script></head><body>
 <li>避免OFB模式</li>
 <li>不要使用RC4，RC4已经被攻破</li>
 </ul>
-<h3 id="对称密钥长度"><a href="#对称密钥长度" class="headerlink" title="对称密钥长度"></a>对称密钥长度</h3><p>选择使用256bit长度的密钥</p>
+<h3 id="对称密钥长度">对称密钥长度</h3>
+<p>选择使用256bit长度的密钥</p>
 <p>适用场景：只要你在使用密码学，你就应该注意<strong>对称密钥长度</strong></p>
 <p>请记住：不要把对称加密（如AES）的key长度，和非对称加密(如RSA)的key长度搞混淆了，对称加密的key通常比非对称加密的key短多了。</p>
 <p>下表对比了相同安全程度时，不同算法的密钥长度，单位:bit</p>
@@ -68,9 +78,12 @@ ga('create','UA-51773802-2','auto');ga('send','pageview');</script></head><body>
 <li>避免把多个加密算法串联叠加起来使用，这并没有什么卵用</li>
 <li>避免128bit以下的key长度(比如，哥们求你别再提DES这种56bit密钥的古董了)</li>
 </ul>
-<h3 id="对称签名"><a href="#对称签名" class="headerlink" title="对称签名"></a>对称签名</h3><p>应该选择 HMAC 类的算法</p>
+<h3 id="对称签名">对称签名</h3>
+<p>应该选择 HMAC 类的算法</p>
 <p>适用场景：安全加固一个API，如各种开放API的调用方认证</p>
-<p>如果对一个API，你需要做认证(authenticating)，但是不需要做加密(encrypting)，记得千万不要自己发明算法，你自己发明的MAC算法基本都有安全漏洞，如果不信，请Google一下 “长度扩展攻击”<br><a href="http://en.wikipedia.org/wiki/Length_extension_attack" target="_blank" rel="noopener">长度扩展攻击</a><br><a href="http://netifera.com/research/flickr_api_signature_forgery.pdf" target="_blank" rel="noopener">Flickr的漏洞案例</a></p>
+<p>如果对一个API，你需要做认证(authenticating)，但是不需要做加密(encrypting)，记得千万不要自己发明算法，你自己发明的MAC算法基本都有安全漏洞，如果不信，请Google一下 &quot;长度扩展攻击&quot;<br>
+<a href="http://en.wikipedia.org/wiki/Length_extension_attack" target="_blank" rel="noopener">长度扩展攻击</a><br>
+<a href="http://netifera.com/research/flickr_api_signature_forgery.pdf" target="_blank" rel="noopener">Flickr的漏洞案例</a></p>
 <p>同时，必须要注意的是，要使用一个<strong>常数时间字符串对比算法</strong>（这个地方和码农的常识完全相反，请务必留意）</p>
 <p>此外，应该</p>
 <ul>
@@ -80,22 +93,26 @@ ga('create','UA-51773802-2','auto');ga('send','pageview');</script></head><body>
 <li>避免加密hash值的结构</li>
 <li>避免CRC</li>
 </ul>
-<h3 id="Hashing-HMAC-算法"><a href="#Hashing-HMAC-算法" class="headerlink" title="Hashing/HMAC 算法"></a>Hashing/HMAC 算法</h3><p>应该选择<a href="http://en.wikipedia.org/wiki/SHA-2" target="_blank" rel="noopener">SHA2</a>类的算法:: SHA-256, SHA-384, SHA-512, SHA-512/256</p>
-<p>优先使用 SHA-512/256，SHA-512/256这个算法把 SHA-512 的512bit输出截短到256bit，避开了length extension 攻击。<br>同时，目前SHA-2是很安全可靠的，你不需要升级到SHA-3.</p>
+<h3 id="hashing-hmac-算法">Hashing/HMAC 算法</h3>
+<p>应该选择<a href="http://en.wikipedia.org/wiki/SHA-2" target="_blank" rel="noopener">SHA2</a>类的算法:: SHA-256, SHA-384, SHA-512, SHA-512/256</p>
+<p>优先使用 SHA-512/256，SHA-512/256这个算法把 SHA-512 的512bit输出截短到256bit，避开了length extension 攻击。<br>
+同时，目前SHA-2是很安全可靠的，你不需要升级到SHA-3.</p>
 <p>此外，应该</p>
 <ul>
 <li>避免SHA-1</li>
 <li>避免MD5</li>
 <li>避免MD6</li>
 </ul>
-<h3 id="随机ID"><a href="#随机ID" class="headerlink" title="随机ID"></a>随机ID</h3><p>应该使用256 bit的随机值</p>
+<h3 id="随机id">随机ID</h3>
+<p>应该使用256 bit的随机值</p>
 <p>一定要使用 /dev/urandom，请认准这个</p>
 <p>此外，应该</p>
 <ul>
 <li>避免用户空间的随机数生成器如:havaged,prngs,egd,等</li>
 <li>避免/dev/random</li>
 </ul>
-<h3 id="密码处理"><a href="#密码处理" class="headerlink" title="密码处理"></a>密码处理</h3><p>按照优先级顺序,选择：</p>
+<h3 id="密码处理">密码处理</h3>
+<p>按照优先级顺序,选择：</p>
 <ul>
 <li>scrypt</li>
 <li>bcrypt</li>
@@ -107,7 +124,8 @@ ga('create','UA-51773802-2','auto');ga('send','pageview');</script></head><body>
 <li>避免直接SHA-1</li>
 <li>避免直接MD5</li>
 </ul>
-<h3 id="非对称加密"><a href="#非对称加密" class="headerlink" title="非对称加密"></a>非对称加密</h3><p>应该使用NaCl库</p>
+<h3 id="非对称加密">非对称加密</h3>
+<p>应该使用NaCl库</p>
 <p>适用场景：当你需要加密消息，发给陌生人，并且对方异步接收消息，做离线解密时。这是一个很窄的应用案例，这种用法有个名字叫<em>电子信封(digital envelope)</em>，典型比如gpg加密文件后发送。</p>
 <p>这条是几条之中最难做正确的，不要使用底层的密码学库，比如OpenSSL或者BouncyCastle。</p>
 <p>你应该停止使用RSA，并且切换到椭圆曲线类体制，原因是：</p>
@@ -123,17 +141,21 @@ ga('create','UA-51773802-2','auto');ga('send','pageview');</script></head><body>
 <li>避免 ElGamal</li>
 <li>避免 RSA</li>
 </ul>
-<h3 id="非对称签名"><a href="#非对称签名" class="headerlink" title="非对称签名"></a>非对称签名</h3><p>应该使用NaCl，Ed25519，或者RFC6979</p>
-<p>应用场景：如果你在设计一种新的比特币，或者一个给Ruby Gems或者Vagrant imges文件签名的系统，或者数字版权保护系统(DRM)，其中一系列的文件需要离线做认证；<br>或者你在设计一个加密消息传输层</p>
+<h3 id="非对称签名">非对称签名</h3>
+<p>应该使用NaCl，Ed25519，或者RFC6979</p>
+<p>应用场景：如果你在设计一种新的比特币，或者一个给Ruby Gems或者Vagrant imges文件签名的系统，或者数字版权保护系统(DRM)，其中一系列的文件需要离线做认证；<br>
+或者你在设计一个加密消息传输层</p>
 <p>上一条的内容在此处全部适用。</p>
 <p>在10+年做付费软件安全评估的工作经历中，我只有屈指可数的几次，遇到使用RSA-PSS的用户，RSA-PSS是一个学术界的推荐算法。</p>
-<p>过去10年，非对称签名最主要的应用场景是比特币，和前向安全的密钥协商（TLS协议里面的ECDHE）。<br>其中最主要的算法全都是基于椭圆曲线体制的。务必警惕新出现的使用RSA签名的系统，很有可能有问题。</p>
+<p>过去10年，非对称签名最主要的应用场景是比特币，和前向安全的密钥协商（TLS协议里面的ECDHE）。<br>
+其中最主要的算法全都是基于椭圆曲线体制的。务必警惕新出现的使用RSA签名的系统，很有可能有问题。</p>
 <p>在过去几年中，业界有一种趋势：放弃传统DSA签名，改为难以误用的<strong>确定性签名体制</strong>，其中的EdDSA(不要和ECDSA搞混了喂！)和RFC6979是最好的例子。这种趋势的主要是受到2010年索尼PlayStation 3的 ECDSA私钥被破解事件的影响，在这个案例中，索尼公司的码农错误地把一个随机数重复使用来做ECDSA签名，形成了漏洞，使得破解者据此直接把私钥算出来了。<strong>确定性签名体制</strong>在设计中不再依赖随机数生成器，因此彻底避开此类误用。所以你应该优先使用确定性签名体制。</p>
 <ul>
 <li>避免RSA-PKCS1v15，避免RSA，避免ECDSA，避免DSA</li>
 <li>特别要避免常规的DSA和ECDSA</li>
 </ul>
-<h3 id="Diffie-Hellman-密钥交换"><a href="#Diffie-Hellman-密钥交换" class="headerlink" title="Diffie-Hellman 密钥交换"></a>Diffie-Hellman 密钥交换</h3><p>应该使用NaCl，Curve25519，或者DH-2048</p>
+<h3 id="diffie-hellman-密钥交换">Diffie-Hellman 密钥交换</h3>
+<p>应该使用NaCl，Curve25519，或者DH-2048</p>
 <p>适用场景:<em>如果你在设计加密消息传输系统，并且无法使用固定对称密码</em></p>
 <p>这是很棘手的一条，主要考量如下：</p>
 <ul>
@@ -152,14 +174,18 @@ ga('create','UA-51773802-2','auto');ga('send','pageview');</script></head><body>
 <li>避免，传统常规的 DH, SRP, J-PAKE 握手和协商</li>
 <li>避开任何只使用了块加密算法和srand(time())的密钥协商模式（肯定有漏洞）</li>
 </ul>
-<h3 id="网站安全"><a href="#网站安全" class="headerlink" title="网站安全"></a>网站安全</h3><p>应该使用OpenSSL，或者Google的BoringSSL，或者直接使用 AWS的 ELB</p>
-<p>此处网站安全，指的是让网站支持HTTPS协议。<br>如果你不能把这个任务交给Amazon的云服务去做，把难题留给Amazon去解决，那么OpenSSL目前仍然是正确选择。</p>
+<h3 id="网站安全">网站安全</h3>
+<p>应该使用OpenSSL，或者Google的BoringSSL，或者直接使用 AWS的 ELB</p>
+<p>此处网站安全，指的是让网站支持HTTPS协议。<br>
+如果你不能把这个任务交给Amazon的云服务去做，把难题留给Amazon去解决，那么OpenSSL目前仍然是正确选择。</p>
 <ul>
 <li>避免不常见的TLS库，例如polarssl，GnuTLS，MatrixSSL等</li>
 </ul>
-<h3 id="客户端-服务器结构的应用程序的安全"><a href="#客户端-服务器结构的应用程序的安全" class="headerlink" title="客户端-服务器结构的应用程序的安全"></a>客户端-服务器结构的应用程序的安全</h3><p>应该使用TLS</p>
+<h3 id="客户端-服务器结构的应用程序的安全">客户端-服务器结构的应用程序的安全</h3>
+<p>应该使用TLS</p>
 <p>适用场景：如果你以为自己理解了前面关于公钥加密的介绍。。。</p>
-<p>通常，在你设计了自己的RSA协议之后的1至18个月，你肯定会发现，你犯了某个错误，使你的协议没有任何安全性。<br>比如Salt Stack，Salt Stack的协议使用了 e=1 的RSA 公钥。。。</p>
+<p>通常，在你设计了自己的RSA协议之后的1至18个月，你肯定会发现，你犯了某个错误，使你的协议没有任何安全性。<br>
+比如Salt Stack，Salt Stack的协议使用了 e=1 的RSA 公钥。。。</p>
 <p>听起来，TLS有下面这些黑历史：</p>
 <ul>
 <li>The Logjam DH negotiation attack</li>
@@ -182,55 +208,63 @@ ga('create','UA-51773802-2','auto');ga('send','pageview');</script></head><body>
 <li>不要自己设计加密传输协议，这是<strong>极其困难而易错的工程难题</strong></li>
 <li>使用TLS，但是不要使用默认配置</li>
 </ul>
-<h3 id="在线备份"><a href="#在线备份" class="headerlink" title="在线备份"></a>在线备份</h3><p>应该使用Tarsnap</p>
+<h3 id="在线备份">在线备份</h3>
+<p>应该使用Tarsnap</p>
 <hr>
-<h3 id="名词解释"><a href="#名词解释" class="headerlink" title="名词解释"></a>名词解释</h3><p>本文的内容比较新，相关中文资料极少，因此文中的名词对读者可能有点陌生，故byron这里介绍一下文中提到的一些名词：</p>
+<h3 id="名词解释">名词解释</h3>
+<p>本文的内容比较新，相关中文资料极少，因此文中的名词对读者可能有点陌生，故byron这里介绍一下文中提到的一些名词：</p>
 <ul>
-<li><p>NaCl 库：<br><a href="http://nacl.cr.yp.to/" target="_blank" rel="noopener">http://nacl.cr.yp.to/</a><br>是密码学学术权威 Daniel J. Bernstein教授 设计的一个密码学算法库，2008年发开始公布。NaCl的特点是：api简洁而易用，高性能，高安全性，主要用于网络通信，加密，解密，签名等，NaCl提供了构建高层密码学工具的核心功能。</p>
+<li>
+<p>NaCl 库：<br>
+<a href="http://nacl.cr.yp.to/" target="_blank" rel="noopener">http://nacl.cr.yp.to/</a><br>
+是密码学学术权威 Daniel J. Bernstein教授 设计的一个密码学算法库，2008年发开始公布。NaCl的特点是：api简洁而易用，高性能，高安全性，主要用于网络通信，加密，解密，签名等，NaCl提供了构建高层密码学工具的核心功能。</p>
 </li>
-<li><p>libsodium 库：<br><a href="https://download.libsodium.org/doc/" target="_blank" rel="noopener">https://download.libsodium.org/doc/</a><br>libsodium是对NaCl库的一个分支，进一步改进接口易用性，和可移植性。</p>
+<li>
+<p>libsodium 库：<br>
+<a href="https://download.libsodium.org/doc/" target="_blank" rel="noopener">https://download.libsodium.org/doc/</a><br>
+libsodium是对NaCl库的一个分支，进一步改进接口易用性，和可移植性。</p>
 </li>
-<li><p>AEAD :<br><a href="https://www.imperialviolet.org/2014/02/27/tlssymmetriccrypto.html" target="_blank" rel="noopener">https://www.imperialviolet.org/2014/02/27/tlssymmetriccrypto.html</a><br>AEAD的概念：<br>在通常的密码学应用中，Confidentiality  (保密) 用加密实现，Message authentication (消息认证) 用MAC实现。这两种算法的配合方式，引发了很多安全漏洞，过去曾经有3种方法：1. Encrypt-and-MAC  2.MAC-then-Encrypt 3.Encrypt-then-MAC ，后来发现，1和2都是有安全问题的，所以，2008年起，<br>逐渐提出了“用一个算法在内部同时实现cipher+MAC”的idea，称为AEAD(Authenticated encryption with additional data)。<br>在AEAD这种概念里，cipher+MAC 被 一个AEAD算法替换。<br><a href="http://en.wikipedia.org/wiki/Authenticated_encryption" target="_blank" rel="noopener">http://en.wikipedia.org/wiki/Authenticated_encryption</a></p>
+<li>
+<p>AEAD :<br>
+<a href="https://www.imperialviolet.org/2014/02/27/tlssymmetriccrypto.html" target="_blank" rel="noopener">https://www.imperialviolet.org/2014/02/27/tlssymmetriccrypto.html</a><br>
+AEAD的概念：<br>
+在通常的密码学应用中，Confidentiality  (保密) 用加密实现，Message authentication (消息认证) 用MAC实现。这两种算法的配合方式，引发了很多安全漏洞，过去曾经有3种方法：1. Encrypt-and-MAC  2.MAC-then-Encrypt 3.Encrypt-then-MAC ，后来发现，1和2都是有安全问题的，所以，2008年起，<br>
+逐渐提出了“用一个算法在内部同时实现cipher+MAC”的idea，称为AEAD(Authenticated encryption with additional data)。<br>
+在AEAD这种概念里，cipher+MAC 被 一个AEAD算法替换。<br>
+<a href="http://en.wikipedia.org/wiki/Authenticated_encryption" target="_blank" rel="noopener">http://en.wikipedia.org/wiki/Authenticated_encryption</a></p>
 </li>
-<li><p>ChaCha20-poly1305 :<br>ChaCha20-poly1305是一种AEAD，提出者是Daniel J. Bernstein教授，针对移动互联网优化，目前Google对移动客户端的所有流量都使用ChaCha20-Poly1305</p>
+<li>
+<p>ChaCha20-poly1305 :<br>
+ChaCha20-poly1305是一种AEAD，提出者是Daniel J. Bernstein教授，针对移动互联网优化，目前Google对移动客户端的所有流量都使用ChaCha20-Poly1305</p>
 </li>
-<li><p>AES-GCM :<br>AES-GCM是一种AEAD，是目前TLS的主力算法，互联网上https流量的大部分依赖使用AES-GCM。<br>AES-GCM和ChaCha20-Poly1305的性能对比测试结果：</p>
+<li>
+<p>AES-GCM :<br>
+AES-GCM是一种AEAD，是目前TLS的主力算法，互联网上https流量的大部分依赖使用AES-GCM。<br>
+AES-GCM和ChaCha20-Poly1305的性能对比测试结果：</p>
 </li>
 </ul>
 <blockquote>
-<table>
-<thead>
-<tr>
-<th>Chip</th>
-<th style="text-align:center">AES-128-GCM speed</th>
-<th style="text-align:center">ChaCha20-Poly1305 speed</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>OMAP 4460</td>
-<td style="text-align:center">24.1 MB/s</td>
-<td style="text-align:center">75.3 MB/s</td>
-</tr>
-<tr>
-<td>Snapdragon S4 Pro</td>
-<td style="text-align:center">41.5 MB/s</td>
-<td style="text-align:center">130.9 MB/s</td>
-</tr>
-<tr>
-<td>Sandy Bridge Xeon (AESNI)</td>
-<td style="text-align:center">900 MB/s</td>
-<td style="text-align:center">500 MB/s</td>
-</tr>
-</tbody>
-</table>
+<p>| Chip	| AES-128-GCM speed	| ChaCha20-Poly1305 speed	|<br>
+| ------ | :-----: 	|  :-----: 	|<br>
+| OMAP 4460	| 24.1 MB/s		| 75.3 MB/s	|<br>
+| Snapdragon S4 Pro	|41.5 MB/s	| 	130.9 MB/s	|<br>
+| Sandy Bridge Xeon (AESNI)	|900 MB/s	| 	500 MB/s	|</p>
 </blockquote>
 <ul>
-<li><p>SHA2 :<br><a href="http://en.wikipedia.org/wiki/SHA-2" target="_blank" rel="noopener">http://en.wikipedia.org/wiki/SHA-2</a></p>
+<li>
+<p>SHA2 :<br>
+<a href="http://en.wikipedia.org/wiki/SHA-2" target="_blank" rel="noopener">http://en.wikipedia.org/wiki/SHA-2</a></p>
 </li>
-<li><p>Curve25519 :<br><a href="http://cr.yp.to/ecdh.html" target="_blank" rel="noopener">http://cr.yp.to/ecdh.html</a><br>Curve25519 是目前最高水平的 Diffie-Hellman函数，适用于广泛的场景，由Daniel J. Bernstein教授设计。由于NIST P-256的设计过程不透明，有来历不明的参数，被广泛怀疑有后门，所以设计了Curve25519，Curve25519的设计过程完全公开，没有任何来历不明的参数。<br>部署情况：<a href="http://ianix.com/pub/curve25519-deployment.html" target="_blank" rel="noopener">http://ianix.com/pub/curve25519-deployment.html</a></p>
+<li>
+<p>Curve25519 :<br>
+<a href="http://cr.yp.to/ecdh.html" target="_blank" rel="noopener">http://cr.yp.to/ecdh.html</a><br>
+Curve25519 是目前最高水平的 Diffie-Hellman函数，适用于广泛的场景，由Daniel J. Bernstein教授设计。由于NIST P-256的设计过程不透明，有来历不明的参数，被广泛怀疑有后门，所以设计了Curve25519，Curve25519的设计过程完全公开，没有任何来历不明的参数。<br>
+部署情况：<a href="http://ianix.com/pub/curve25519-deployment.html" target="_blank" rel="noopener">http://ianix.com/pub/curve25519-deployment.html</a></p>
 </li>
-<li><p>Ed25519 :<br><a href="http://ed25519.cr.yp.to/" target="_blank" rel="noopener">http://ed25519.cr.yp.to/</a><br>Ed25519 是一个数字签名算法，优点有：</p>
+<li>
+<p>Ed25519 :<br>
+<a href="http://ed25519.cr.yp.to/" target="_blank" rel="noopener">http://ed25519.cr.yp.to/</a><br>
+Ed25519 是一个数字签名算法，优点有：</p>
 <ul>
 <li>签名和验证的性能都极高， 一个4核2.4GHz 的 Westmere cpu，每秒可以验证 71000 个签名</li>
 <li>安全性极高，等价于RSA约3000-bit</li>
@@ -239,16 +273,28 @@ ga('create','UA-51773802-2','auto');ga('send','pageview');</script></head><body>
 </ul>
 <p>部署情况：<a href="http://ianix.com/pub/ed25519-deployment.html" target="_blank" rel="noopener">http://ianix.com/pub/ed25519-deployment.html</a></p>
 </li>
-<li><p>前向安全性：<br>前向安全性( Perfect Forward Secrecy )<br><a href="http://vincent.bernat.im/en/blog/2011-ssl-perfect-forward-secrecy.html" target="_blank" rel="noopener">http://vincent.bernat.im/en/blog/2011-ssl-perfect-forward-secrecy.html</a><br>前向安全性指的是，如果攻击者抓取并保存流量，那么将来私钥泄露后，攻击者也无法利用泄露的私钥解密这些流量。</p>
+<li>
+<p>前向安全性：<br>
+前向安全性( Perfect Forward Secrecy )<br>
+<a href="http://vincent.bernat.im/en/blog/2011-ssl-perfect-forward-secrecy.html" target="_blank" rel="noopener">http://vincent.bernat.im/en/blog/2011-ssl-perfect-forward-secrecy.html</a><br>
+前向安全性指的是，如果攻击者抓取并保存流量，那么将来私钥泄露后，攻击者也无法利用泄露的私钥解密这些流量。</p>
 </li>
-<li><p>Diffie-Hellman 密钥交换：<br><a href="http://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange" target="_blank" rel="noopener">http://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange</a><br>在任何一本密码学教材里面都会重点介绍的</p>
+<li>
+<p>Diffie-Hellman 密钥交换：<br>
+<a href="http://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange" target="_blank" rel="noopener">http://en.wikipedia.org/wiki/Diffie–Hellman_key_exchange</a><br>
+在任何一本密码学教材里面都会重点介绍的</p>
 </li>
-<li><p>constant time compare :<br>针对Timing attack，<a href="http://en.wikipedia.org/wiki/Timing_attack" target="_blank" rel="noopener">http://en.wikipedia.org/wiki/Timing_attack</a> （这种攻击真是脑洞大开！）<br>当一个算法的运行时间和输入数据有关的时候，可以根据运行时间这一信息，破解出密钥等。<br>典型的，比如要验证一个对称签名，如果你用了C库里面的memcmp()，那你就会被timing attack方式攻击。<br>因此，涉及到密码学数据的memcmp，必须要用运行时间和输入无关的函数，比如OpenSSL库里面的CRYPTO_memcmp()</p>
+<li>
+<p>constant time compare :<br>
+针对Timing attack，<a href="http://en.wikipedia.org/wiki/Timing_attack" target="_blank" rel="noopener">http://en.wikipedia.org/wiki/Timing_attack</a> （这种攻击真是脑洞大开！）<br>
+当一个算法的运行时间和输入数据有关的时候，可以根据运行时间这一信息，破解出密钥等。<br>
+典型的，比如要验证一个对称签名，如果你用了C库里面的memcmp()，那你就会被timing attack方式攻击。<br>
+因此，涉及到密码学数据的memcmp，必须要用运行时间和输入无关的函数，比如OpenSSL库里面的CRYPTO_memcmp()</p>
 </li>
 </ul>
 <hr>
 <p>原文链接：<a href="https://gist.github.com/byronhe/232d22f1d3dcaa0a20cb" target="_blank" rel="noopener">https://gist.github.com/byronhe/232d22f1d3dcaa0a20cb</a></p>
-</div><script type="text/javascript" src="/js/share.js?v=0.0.1" async></script><a data-url="https://hyxxsfwy.github.io/2017/04/15/【转】现代密码学实践指南-2015年/" data-id="cjewa8tcu000bakjg78el8mhr" data-qrcode="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACsklEQVR42u3aMZLjMAwEQP//03vpRvIMQPq8Va3I5ZIlNAOQBvB6xdfPr+v3N8k9z98/vzG/f3Xh4eHhLUJPAnp+8fOvNve3T8bDw8O7zUtSc57EnxP68xvzLec5Ejw8PLzv5OVJP1mI56jw8PDw/i7v+QjbbgzJQRkPDw/vO3mzR2/KE/tFOVxrwcPDw4t5eRfpez5f6e/h4eHhrbvqm+ZT+31egCiixcPDw7vAyxNue2xtyxCzxlh0Jx4eHt4F3qkQnx+dbw/51jIbdMDDw8Pb8GbDTEnybcu7eRGkKN3i4eHhfYQ3+9uft8Q220ZbvMDDw8O7wcs3ieclOLV5zBpy0TaDh4eHd4iXFwLyIGZjWHnJuDhk4+Hh4V3j5Uk/L6cmx+JT4KKMi4eHh3eIl5chZq/MF3F2dC7GrfDw8PAO8dqCaf6CTTstOTq/iRYPDw/vAu9Unz0pTOQtrnbcKpopw8PDwzvEa0NvW1xt0SEvKEebEB4eHt413mz4qT1Yt5i8+/9mpgwPDw/vKC8v3baFgLNDCZtSBR4eHt4NXptq82Q921r22w8eHh7ebV6SmpPXJ8l6NmSQxImHh4f3Gd6sV5Yfo9uBg+TJxSEeDw8P7wLvVCMqb3e1R+TNcuPh4eF9hjcbsdoMTrWFiXaZ8PDw8D7DmzWuilceLdQWR2o8PDy8C7z2WLxK2aPScBs/Hh4e3m3eptCQB9SWaF/x9aZWjYeHh7fm/ZRXHmg7yDUbR3iz9Hh4eHgXeG3CTah5WO1xOf+Mh4eHd5uXbAYbUt4YSzaJdhPCw8PDu8drk/K+AFHvTqNlxcPDw/sGXj5Y0B6sZ+XdenQADw8P77/y2qDrtB4vZdPyw8PDwzvDa9P6rFCbjGTlyGIyAg8PD+8ob/aHf1PG3Rcm9uNZeHh4eCPeP3Oiac4Nk0xTAAAAAElFTkSuQmCC" class="article-share-link">分享</a><div class="tags"><a href="/tags/翻墙/">翻墙</a><a href="/tags/密码学/">密码学</a></div><div class="post-nav"><a href="/2016/06/18/搜集可用于XX-Net的高速GGC-IP段/" class="next">搜集可用于 XX-Net 的高速 GGC IP 段</a></div><div id="disqus_thread"><div class="btn_click_load"><button class="disqus_click_btn">阅读评论 「请确保 disqus.com 可以正常加载」</button></div><script>var disqus_shortname = 'hyxxsfwy';
+</div><script type="text/javascript" src="/js/share.js?v=0.0.1" async></script><a data-url="https://hyxxsfwy.github.io/2017/04/15/【转】现代密码学实践指南-2015年/" data-id="cjewltbo9000790jg32decqhe" data-qrcode="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACsklEQVR42u3aMZLjMAwEQP//03vpRvIMQPq8Va3I5ZIlNAOQBvB6xdfPr+v3N8k9z98/vzG/f3Xh4eHhLUJPAnp+8fOvNve3T8bDw8O7zUtSc57EnxP68xvzLec5Ejw8PLzv5OVJP1mI56jw8PDw/i7v+QjbbgzJQRkPDw/vO3mzR2/KE/tFOVxrwcPDw4t5eRfpez5f6e/h4eHhrbvqm+ZT+31egCiixcPDw7vAyxNue2xtyxCzxlh0Jx4eHt4F3qkQnx+dbw/51jIbdMDDw8Pb8GbDTEnybcu7eRGkKN3i4eHhfYQ3+9uft8Q220ZbvMDDw8O7wcs3ieclOLV5zBpy0TaDh4eHd4iXFwLyIGZjWHnJuDhk4+Hh4V3j5Uk/L6cmx+JT4KKMi4eHh3eIl5chZq/MF3F2dC7GrfDw8PAO8dqCaf6CTTstOTq/iRYPDw/vAu9Unz0pTOQtrnbcKpopw8PDwzvEa0NvW1xt0SEvKEebEB4eHt413mz4qT1Yt5i8+/9mpgwPDw/vKC8v3baFgLNDCZtSBR4eHt4NXptq82Q921r22w8eHh7ebV6SmpPXJ8l6NmSQxImHh4f3Gd6sV5Yfo9uBg+TJxSEeDw8P7wLvVCMqb3e1R+TNcuPh4eF9hjcbsdoMTrWFiXaZ8PDw8D7DmzWuilceLdQWR2o8PDy8C7z2WLxK2aPScBs/Hh4e3m3eptCQB9SWaF/x9aZWjYeHh7fm/ZRXHmg7yDUbR3iz9Hh4eHgXeG3CTah5WO1xOf+Mh4eHd5uXbAYbUt4YSzaJdhPCw8PDu8drk/K+AFHvTqNlxcPDw/sGXj5Y0B6sZ+XdenQADw8P77/y2qDrtB4vZdPyw8PDwzvDa9P6rFCbjGTlyGIyAg8PD+8ob/aHf1PG3Rcm9uNZeHh4eCPeP3Oiac4Nk0xTAAAAAElFTkSuQmCC" class="article-share-link">分享</a><div class="tags"><a href="/tags/密码学/">密码学</a><a href="/tags/翻墙/">翻墙</a></div><div class="post-nav"><a href="/2018/03/18/【学习笔记】厚朴中医学堂-痛经的非药物外治法/" class="pre">【学习笔记】厚朴中医学堂—痛经的非药物外治法</a><a href="/2016/06/18/搜集可用于XX-Net的高速GGC-IP段/" class="next">搜集可用于 XX-Net 的高速 GGC IP 段</a></div><div id="disqus_thread"><div class="btn_click_load"><button class="disqus_click_btn">阅读评论 「请确保 disqus.com 可以正常加载」</button></div><script>var disqus_shortname = 'hyxxsfwy';
 var disqus_identifier = '2017/04/15/【转】现代密码学实践指南-2015年/';
 var disqus_title = '【转】现代密码学实践指南【2015年】';
 var disqus_url = 'https://hyxxsfwy.github.io/2017/04/15/【转】现代密码学实践指南-2015年/';
@@ -273,7 +319,7 @@ $.ajax({
   error: function() {
     $('.btn_click_load').css('display','block');
   }
-});</script><script id="dsq-count-scr" src="//hyxxsfwy.disqus.com/count.js" async></script></div></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><div class="search-form"><input id="local-search-input" placeholder="Search" type="text" name="q" results="0"/><div id="local-search-result"></div></div></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/学习/">学习</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/翻墙/">翻墙</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/转载/">转载</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/时间管理/" style="font-size: 15px;">时间管理</a> <a href="/tags/免流/" style="font-size: 15px;">免流</a> <a href="/tags/HAProxy/" style="font-size: 15px;">HAProxy</a> <a href="/tags/Markdown/" style="font-size: 15px;">Markdown</a> <a href="/tags/LaTex/" style="font-size: 15px;">LaTex</a> <a href="/tags/教程/" style="font-size: 15px;">教程</a> <a href="/tags/Hello/" style="font-size: 15px;">Hello</a> <a href="/tags/GTD/" style="font-size: 15px;">GTD</a> <a href="/tags/帮助/" style="font-size: 15px;">帮助</a> <a href="/tags/拖延症/" style="font-size: 15px;">拖延症</a> <a href="/tags/信息安全/" style="font-size: 15px;">信息安全</a> <a href="/tags/边信道攻击/" style="font-size: 15px;">边信道攻击</a> <a href="/tags/Hack-Security/" style="font-size: 15px;">Hack&Security</a> <a href="/tags/XX-Net/" style="font-size: 15px;">XX-Net</a> <a href="/tags/翻墙/" style="font-size: 15px;">翻墙</a> <a href="/tags/Google/" style="font-size: 15px;">Google</a> <a href="/tags/密码学/" style="font-size: 15px;">密码学</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/04/15/【转】现代密码学实践指南-2015年/">【转】现代密码学实践指南【2015年】</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/18/搜集可用于XX-Net的高速GGC-IP段/">搜集可用于 XX-Net 的高速 GGC IP 段</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/01/【转】边信道攻击，从米特尼克传奇重现说起/">【转】边信道攻击，从米特尼克传奇重现说起</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/01/30/HaP-免流模式语法帮助文档/">HaP 免流模式语法帮助文档</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/01/16/【转】如何在死线未至时，像死线已至那样高效？/">【转】如何在死线未至时，像死线已至那样高效？</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/01/15/Hexo-Markdown-简明语法手册/">Hexo Markdown 简明语法手册</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/01/14/hello-world/">Hello World</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-comment-o"> 最近评论</i></div><script type="text/javascript" src="//hyxxsfwy.disqus.com/recent_comments_widget.js?num_items=5&amp;hide_avatars=1&amp;avatar_size=32&amp;excerpt_length=20&amp;hide_mods=1"></script></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2018 <a href="/." rel="nofollow">Mobilicorpus.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a id="rocket" href="#top" class="show"></a><script type="text/javascript" src="/js/totop.js?v=0.0.1" async></script><script type="text/javascript" src="//cdn.bootcss.com/fancybox/3.1.20/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.1" async></script><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/fancybox/3.1.20/jquery.fancybox.min.css"><script type="text/javascript" src="/js/search.js?v=0.0.1"></script><script>var search_path = 'search.xml';
+});</script><script id="dsq-count-scr" src="//hyxxsfwy.disqus.com/count.js" async></script></div></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><div class="search-form"><input id="local-search-input" placeholder="Search" type="text" name="q" results="0"/><div id="local-search-result"></div></div></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/学习/">学习</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/翻墙/">翻墙</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/转载/">转载</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/密码学/" style="font-size: 15px;">密码学</a> <a href="/tags/免流/" style="font-size: 15px;">免流</a> <a href="/tags/HAProxy/" style="font-size: 15px;">HAProxy</a> <a href="/tags/Hello/" style="font-size: 15px;">Hello</a> <a href="/tags/教程/" style="font-size: 15px;">教程</a> <a href="/tags/中医/" style="font-size: 15px;">中医</a> <a href="/tags/GTD/" style="font-size: 15px;">GTD</a> <a href="/tags/时间管理/" style="font-size: 15px;">时间管理</a> <a href="/tags/拖延症/" style="font-size: 15px;">拖延症</a> <a href="/tags/帮助/" style="font-size: 15px;">帮助</a> <a href="/tags/翻墙/" style="font-size: 15px;">翻墙</a> <a href="/tags/信息安全/" style="font-size: 15px;">信息安全</a> <a href="/tags/边信道攻击/" style="font-size: 15px;">边信道攻击</a> <a href="/tags/Hack-Security/" style="font-size: 15px;">Hack&Security</a> <a href="/tags/XX-Net/" style="font-size: 15px;">XX-Net</a> <a href="/tags/Google/" style="font-size: 15px;">Google</a> <a href="/tags/Markdown/" style="font-size: 15px;">Markdown</a> <a href="/tags/LaTex/" style="font-size: 15px;">LaTex</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2018/03/18/【学习笔记】厚朴中医学堂-痛经的非药物外治法/">【学习笔记】厚朴中医学堂—痛经的非药物外治法</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/15/【转】现代密码学实践指南-2015年/">【转】现代密码学实践指南【2015年】</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/18/搜集可用于XX-Net的高速GGC-IP段/">搜集可用于 XX-Net 的高速 GGC IP 段</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/01/【转】边信道攻击，从米特尼克传奇重现说起/">【转】边信道攻击，从米特尼克传奇重现说起</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/01/30/HaP-免流模式语法帮助文档/">HaP 免流模式语法帮助文档</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/01/16/【转】如何在死线未至时，像死线已至那样高效？/">【转】如何在死线未至时，像死线已至那样高效？</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/01/15/Hexo-Markdown-简明语法手册/">Hexo Markdown 简明语法手册</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/01/14/hello-world/">Hello World</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-comment-o"> 最近评论</i></div><script type="text/javascript" src="//hyxxsfwy.disqus.com/recent_comments_widget.js?num_items=5&amp;hide_avatars=1&amp;avatar_size=32&amp;excerpt_length=20&amp;hide_mods=1"></script></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2018 <a href="/." rel="nofollow">Mobilicorpus.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a id="rocket" href="#top" class="show"></a><script type="text/javascript" src="/js/totop.js?v=0.0.1" async></script><script type="text/javascript" src="//cdn.bootcss.com/fancybox/3.1.20/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.1" async></script><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/fancybox/3.1.20/jquery.fancybox.min.css"><script type="text/javascript" src="/js/search.js?v=0.0.1"></script><script>var search_path = 'search.xml';
 if (search_path.length == 0) {
    search_path = 'search.xml';
 }
