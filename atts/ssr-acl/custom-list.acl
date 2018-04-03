@@ -6359,7 +6359,6 @@
 (^|\.)cnbeta\.com$
 (^|\.)office\.com$
 (^|\.)ofweek\.com$
-(^|\.)binance\.com$
 (^|\.)typekit\.net$
 (^|\.)outlook\.com$
 (^|\.)microsoft\.com$
@@ -6375,9 +6374,10 @@
 
 # 域名关键字
 (^|\.)\w*vpn\w*\.\w*$
+(^|\.)\w*1e100\w*\.\w*$
 (^|\.)\w*avast\w*\.\w*$
 (^|\.)\w*amazon\w*\.\w*$
-(^|\.)\w*1e100\w*\.\w*$
+(^|\.)\w*binance\w*\.\w*$
 (^|\.)\w*appledaily\w*\.\w*$
 (^|\.)\w*blogspot\w*\.\w*$
 (^|\.)\w*dropbox\w*\.\w*$
