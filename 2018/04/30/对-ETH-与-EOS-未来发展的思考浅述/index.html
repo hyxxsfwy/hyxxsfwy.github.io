@@ -1,0 +1,288 @@
+<!DOCTYPE html><script type="text/javascript">
+var host = "hyxxsfwy.github.io";
+if ((host == window.location.host) && (window.location.protocol != "https:"))
+    window.location.protocol = "https";
+</script><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description"><title>对 ETH 与 EOS 未来发展的思考浅述（技术篇） | Mobilicorpus</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.1"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/normalize/8.0.0/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/1.0.0/pure-min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/1.0.0/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ga('create','UA-51773802-2','auto');ga('send','pageview');</script></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">对 ETH 与 EOS 未来发展的思考浅述（技术篇）</h1><a id="logo" href="/.">Mobilicorpus</a><p class="description">幻影显形 | Keep Curiosity</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">对 ETH 与 EOS 未来发展的思考浅述（技术篇）</h1><div class="post-meta">Apr 30, 2018<script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span></div><a class="disqus-comment-count" data-disqus-identifier="2018/04/30/对-ETH-与-EOS-未来发展的思考浅述/" href="/2018/04/30/对-ETH-与-EOS-未来发展的思考浅述/#disqus_thread"></a><div class="clear"><div class="toc-article" id="toc"><div class="toc-title">文章目录</div><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#引言"><span class="toc-number">1.</span> <span class="toc-text">引言</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#github-项目生态分析"><span class="toc-number">2.</span> <span class="toc-text">Github 项目生态分析</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#共识算法优劣对比"><span class="toc-number">3.</span> <span class="toc-text">共识算法优劣对比</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#对共识算法机制的引申思考"><span class="toc-number">4.</span> <span class="toc-text">对共识算法机制的引申思考</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#一点补充分析"><span class="toc-number">5.</span> <span class="toc-text">一点补充分析</span></a></li></ol></div></div><div class="post-content"><h3 id="引言">引言</h3>
+<p>身为币圈一员，又是学计算机专业的，对目前打得火热的两大开源区块链项目 ETH 与 EOS 自然是会比较上心。二者的技术、理念、演化模式、未来前景，都应当是需要关注与思考的话题。</p>
+<p>本文将尝试从技术层面对这两个项目进行综合对比分析。一家之言，仅供参考。</p>
+<h3 id="github-项目生态分析">Github 项目生态分析</h3>
+<p>Ethereum 项目主页：<a href="https://github.com/ethereum" title="https://github.com/ethereum" target="_blank" rel="noopener">https://github.com/ethereum</a></p>
+<p>EOS 项目主页：<a href="https://github.com/EOSIO" title="https://github.com/EOSIO" target="_blank" rel="noopener">https://github.com/EOSIO</a></p>
+<p>下面列表分析 ETH 和 EOS 两者的项目生态数据（截至 2018.05.01），同时引入币圈最成功的开源项目 Bitcoin 的数据作为对照。</p>
+<ul>
+<li>表 1：项目数据总览</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">项目名称</th>
+<th style="text-align:center">关联的代码仓库数量</th>
+<th style="text-align:center">项目公共成员</th>
+<th style="text-align:left">协议实现核心分支数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Ethereum（以太坊）</td>
+<td style="text-align:center">3663</td>
+<td style="text-align:center">38</td>
+<td style="text-align:left">2 (Go &amp; C++ 实现)</td>
+</tr>
+<tr>
+<td style="text-align:left">EOS（柚子）</td>
+<td style="text-align:center">71</td>
+<td style="text-align:center">0</td>
+<td style="text-align:left">1 (C++ 实现)</td>
+</tr>
+<tr>
+<td style="text-align:left">Bitcoin（比特币）</td>
+<td style="text-align:center">2840</td>
+<td style="text-align:center">25</td>
+<td style="text-align:left">1 (C++ 实现)</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<ul>
+<li>表 2：核心仓库数据统计</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">仓库名称</th>
+<th style="text-align:center">实现语言</th>
+<th style="text-align:center"><em>开源协议</em></th>
+<th style="text-align:center">星标</th>
+<th style="text-align:center">Watch</th>
+<th style="text-align:center">Fork</th>
+<th style="text-align:center">贡献者</th>
+<th style="text-align:center">发布版本</th>
+<th style="text-align:center">社区计划项目数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">ethereum/go-ethereum</td>
+<td style="text-align:center">Go</td>
+<td style="text-align:center">LGPL-3.0</td>
+<td style="text-align:center">17118</td>
+<td style="text-align:center">1753</td>
+<td style="text-align:center">5429</td>
+<td style="text-align:center">259</td>
+<td style="text-align:center">130</td>
+<td style="text-align:center">9</td>
+</tr>
+<tr>
+<td style="text-align:left">ethereum/cpp-ethereum</td>
+<td style="text-align:center">C++</td>
+<td style="text-align:center">GPL-3.0</td>
+<td style="text-align:center">3008</td>
+<td style="text-align:center">525</td>
+<td style="text-align:center">1893</td>
+<td style="text-align:center">125</td>
+<td style="text-align:center">228</td>
+<td style="text-align:center">0</td>
+</tr>
+<tr>
+<td style="text-align:left">EOSIO/eos</td>
+<td style="text-align:center">C++</td>
+<td style="text-align:center">MIT</td>
+<td style="text-align:center">6461</td>
+<td style="text-align:center">1069</td>
+<td style="text-align:center">1517</td>
+<td style="text-align:center">101</td>
+<td style="text-align:center">43</td>
+<td style="text-align:center">0</td>
+</tr>
+<tr>
+<td style="text-align:left">bitcoin/bitcoin</td>
+<td style="text-align:center">C++</td>
+<td style="text-align:center">MIT</td>
+<td style="text-align:center">31059</td>
+<td style="text-align:center">3236</td>
+<td style="text-align:center">18597</td>
+<td style="text-align:center">537</td>
+<td style="text-align:center">192</td>
+<td style="text-align:center">8</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>注：GPL、LGPL 协议属于非商业化的强制开源协议，MIT 协议是允许项目后续向闭源、商业化发展的。详见这篇文章：<a href="http://www.ruanyifeng.com/blog/2011/05/how_to_choose_free_software_licenses.html" title="http://www.ruanyifeng.com/blog/2011/05/how_to_choose_free_software_licenses.html" target="_blank" rel="noopener">如何选择开源许可证？- 阮一峰的网络日志</a></li>
+</ul>
+<hr>
+<ul>
+<li>表 3：最近一个月项目开发活跃度</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">仓库名称</th>
+<th style="text-align:center">活跃的 Pull 请求</th>
+<th style="text-align:center">提交的更改数</th>
+<th style="text-align:center">参与的开发者数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">ethereum/go-ethereum</td>
+<td style="text-align:center">82</td>
+<td style="text-align:center">61</td>
+<td style="text-align:center">32</td>
+</tr>
+<tr>
+<td style="text-align:left">ethereum/cpp-ethereum</td>
+<td style="text-align:center">48</td>
+<td style="text-align:center">115</td>
+<td style="text-align:center">7</td>
+</tr>
+<tr>
+<td style="text-align:left">EOSIO/eos</td>
+<td style="text-align:center">233</td>
+<td style="text-align:center">760</td>
+<td style="text-align:center">40</td>
+</tr>
+<tr>
+<td style="text-align:left">bitcoin/bitcoin</td>
+<td style="text-align:center">236</td>
+<td style="text-align:center">252</td>
+<td style="text-align:center">43</td>
+</tr>
+</tbody>
+</table>
+<p>注：这个指标可以直接到 Github 的仓库统计页面上去查看，有详尽的图表与数据展示。结论是，近一个月内，由于主网上线日期临近，EOS 项目开发的活跃程度明显高于 ETH 的两个核心项目。</p>
+<ul>
+<li>
+<p>go-ethereum 近一个月仓库活动数据查看地址：<br>
+<a href="https://github.com/ethereum/go-ethereum/pulse/monthly" title="https://github.com/ethereum/go-ethereum/pulse/monthly" target="_blank" rel="noopener">https://github.com/ethereum/go-ethereum/pulse/monthly</a></p>
+</li>
+<li>
+<p>cpp-ethereum 近一个月仓库活动数据查看地址：<br>
+<a href="https://github.com/ethereum/cpp-ethereum/pulse/monthly" title="https://github.com/ethereum/cpp-ethereum/pulse/monthly" target="_blank" rel="noopener">https://github.com/ethereum/cpp-ethereum/pulse/monthly</a></p>
+</li>
+<li>
+<p>EOSIO/eos 近一个月仓库活动数据查看地址：<br>
+<a href="https://github.com/ethereum/cpp-ethereum/pulse/monthly" title="https://github.com/ethereum/cpp-ethereum/pulse/monthly" target="_blank" rel="noopener">https://github.com/ethereum/cpp-ethereum/pulse/monthly</a></p>
+</li>
+<li>
+<p>bitcoin/bitcoin 近一个月仓库活动数据查看地址：<br>
+<a href="https://github.com/bitcoin/bitcoin/pulse/monthly" title="https://github.com/bitcoin/bitcoin/pulse/monthly" target="_blank" rel="noopener">https://github.com/bitcoin/bitcoin/pulse/monthly</a></p>
+</li>
+</ul>
+<p>总结：无需对上述数据做过分解读，但从宏观事实出发，ETH 项目的开源生态建设显然优于 EOS。换句话说，没有了中本聪的 Bitcoin 还是 BTC，没有 V 神的 ETH 也还会是 ETH，但没有 BM 的 EOS，可能就不再是 EOS 了。</p>
+<h3 id="共识算法优劣对比">共识算法优劣对比</h3>
+<p>BTC 使用的共识算法是 POW（Proof of work，工作量证明）；<br>
+ETH 目前使用的共识算法是 POW + POS（Proof of Stake，股权证明）混合模式；<br>
+EOS 使用的共识算法是 DPOS（Delegated Proof of Stake，委任权益证明）。</p>
+<p>这三种算法各有优劣，POW 模式稳定、游戏规则明确、潜在的人为影响风险最小，为人所诟病的缺陷就是矿场矿池对算力的垄断。POS 是软件模拟挖矿的方案，相对而言整个区块链就更容易被算法漏洞所影响，且账本分叉成本低廉，曾经闹得沸沸扬扬的 ETH 与 ETC 之争就是明证。DPOS 机制是 BM 对 POS 的“技术改进”，其本质上是将 ETH 面临的复杂动态多节点网络问题简化成了固定节点（21 + 100）的简单类静态分布式网络问题。对于程序开发而言，这种简化确实大大降低了开发难度，同时还能有效提高主链的处理能力（即取得较高的 TPS 值）。但区块链项目本来就存在一个“蒙代尔三角”难题：“高效率、去中心、安全性”三者形成一个不可能三角关系：任意系统无法同时满足此三种特性。比特币和以太坊是通过舍弃“高效率”来获得去中心和安全性，而 EOS 则通过 DPOS 机制选举 21 个超级节点，舍弃“去中心”与“安全性”，以“弱中心”方式追求“高效率”。</p>
+<p>下表列出的是“按照区块链网络内置协议运作的话，三种算法各自可能面临的安全问题”：</p>
+<ul>
+<li>表 4，PoW、PoS、DPoS 安全性对比</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">攻击方法</th>
+<th style="text-align:center">POW</th>
+<th style="text-align:center">POS</th>
+<th style="text-align:center">DPOS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">短距离攻击（如贿赂攻击）</td>
+<td style="text-align:center">/</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">/</td>
+</tr>
+<tr>
+<td style="text-align:left">长距离攻击</td>
+<td style="text-align:center">/</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+</tr>
+<tr>
+<td style="text-align:left">币龄累计攻击</td>
+<td style="text-align:center">/</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+</tr>
+<tr>
+<td style="text-align:left">预计算攻击</td>
+<td style="text-align:center">/</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">/</td>
+</tr>
+<tr>
+<td style="text-align:left">分布式拒绝服务（DDos）</td>
+<td style="text-align:center">/</td>
+<td style="text-align:center">可能</td>
+<td style="text-align:center">x</td>
+</tr>
+<tr>
+<td style="text-align:left">女巫攻击（Sybil Attack）</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+</tr>
+</tbody>
+</table>
+<p>注：详情参见这篇文章：<a href="https://daimajia.com/2017/09/14/pow-and-pos" title="https://daimajia.com/2017/09/14/pow-and-pos" target="_blank" rel="noopener">PoW，PoS，DPoS 综述</a></p>
+<p>结论：从现有技术角度看，ETH 目前的 POW+POS 混合模式无疑是最佳选择。接下来，阐述得出该结论的原因。</p>
+<h3 id="对共识算法机制的引申思考">对共识算法机制的引申思考</h3>
+<p>由上表可知，技术上，POW 算法可以免疫绝大多数的攻击手法，而 POS 算法最易遭受攻击。然而，这里有一个大前提，就是攻击者是遵守“游戏规则”的，会在区块链自身设定的协议体系中找出漏洞并且尝试攻击。但实际上，没有这么傻的攻击者。打个比方，我知道小偷可能会撬门而入，所以安全防范措施就是换好的防盗门，加坚固的锁。殊不知，真正要来偷的都是走窗户和阳台，或者假扮外卖小哥入室抢劫，根本不会按套路出牌。在一个点对点的网络系统中，有效节点的数量决定了整个系统的健壮性。BTC、ETH 都是不限全节点数量的，主链网络安全又受到矿工们巨大算力的保护，所以可以长期稳定运行。但 EOS 的架构设计，不具备这个条件。</p>
+<p>我们知道，EOS 的架构是 21 个超级节点负责提供整个主链所需的运算、存储、网络等硬件资源，而 100 个见证节点是“预备队”，平时只负责验证超级节点是否正常、有效的工作，只有当某个超级节点出现问题时，才有机会被选上成为新的超级节点。原本这是一个很优秀的主从备份设计，可以确保整个网络的稳定运行。可惜，当 EOS 的分红机制将超级节点设计成“会下金蛋的鸡”之后，事情就变质了。设想这样一个场景，我是某个见证节点的主人，每个月都花费不菲的成本去运行这个备份节点，眼见着超级节点躺着赚钱，自己这却只能跟着喝口汤。明明是一样的硬件配置，一样的设备开销，一样的运维费用，只因为你当初主网上线时选票拉的好了那么一点点，坐上了超级节点的宝座，从此就吃香的喝辣的，凭什么？按照游戏规则，见证节点作为备份，只有当某个超级节点宕机死掉之后，才有机会被选上代替这个超级节点的位置。100 个见证节点，如果大部分都对超级节点抱着“你赶紧死掉我好上位”的心态的话，我不知道有什么理由阻挡超级节点被恶意攻击。事实上，只要对某个超级节点暴露在外网、对主链提供服务的端口发动 TCP/IP 层的大流量 DDoS 攻击，这个超级节点的网络服务能力就一定会被瘫痪掉。几分钟后，这个一直处于无法响应通信状态的超级节点就会被票死，失去超级节点的资格。要是所有节点持有人都这么干，EOS 网络就没法工作了。</p>
+<p>当然，出钱的资本方都不傻，这样自己玩死自己的蠢事不会去做。那这 100 个见证节点真的就会遵守规则，面对潜在的巨额利润毫不动心，乖乖排队等待不知何时才会落到自己头上的超级节点资格吗？主网还没上线，超级节点贿选的事情就已经发酵了，ETH 的 创始人 V 神还专门为此事写了一篇檄文：<a href="https://mp.weixin.qq.com/s/S5I0m_GIArNFUm4cKYS4sA" title="https://mp.weixin.qq.com/s/S5I0m_GIArNFUm4cKYS4sA" target="_blank" rel="noopener">V神谈EOS节点投票：我们必须绕开的阴影之地</a>。主网上线之后，121 个节点实际上就形成了一个利益共同体。当所有参与方都意识到自己既有毁灭对手的能力，又随时可能被对手所毁灭的时候，博弈的结果只能是联合起来，一起赚钱，一起割韭菜。但事情若走到这一步，EOS 这个区块链项目和某个大互联网公司的云计算平台还有什么区别呢？以后这 121 个节点中的大部分肯定都是跑在亚马逊 AWS 云服务器上的，我作为一个开发者，与其在各方利益纠葛不清的 EOS 系统内去费时费力的开发 DAPP，还不如直接用成熟的 AWS 系统，快速开发快速上线呢。</p>
+<p>此外，有攻击超级节点动机的可不止那 100 个见证节点持有人。EOS 代币已经被炒到了一个高位，就是普通黑产，也有强烈的通过威胁攻击超级节点，来向超级节点持有人敲诈勒索大量加密货币的动机。目前全球各地天天专研 ETH 系统漏洞，指望盗币发财的黑客一大堆，攻防战早已打响，ETH 也在开源社区自身力量的驱动下不断的优化协议逻辑，修改代码 BUG。而 EOS 呢，主网都没上线，未知的考验还不知有多少。欲带皇冠，必承其重，EOS 这种先把泡泡吹起来，再去试探真假，把赌注压在六月主网上线之后一切顺利的做法，风险极高！</p>
+<h3 id="一点补充分析">一点补充分析</h3>
+<p>实际上，EOS 的预期已经被过度消耗了。项目八字还没一撇，就这样去爆炒，完全是资金盘操纵的手法。到时候主网上线，随便出点什么差错（这是大概率事件，一个新系统上线，其表现是几乎不可能完全符合预期的），就都是做空的动力。</p>
+<p>我比较赞同<a href="https://zhuanlan.zhihu.com/p/35831536" title="歪理邪说：EOS 可能是个癌细胞……" target="_blank" rel="noopener">这篇文章</a>所提出的理论：</p>
+<blockquote>
+<p>区块链是什么？<br>
+区块链是比特币；<br>
+区块链是点对点的分布式的账本；<br>
+区块链是带智能合约的点对点的分布式账本；<br>
+区块链是生产关系；<br>
+区块链是一种社会思潮；<br>
+区块链是一种基因（X-gen）</p>
+</blockquote>
+<p>不错，区块链就像细胞中的 DNA。其核心价值，不在于主链有多么强大的而丰富的功能，而在于其像基因一样，去中心化，稳定，传承价值，同时具备一定的合约功能。而更为复杂的功能，就应该交给侧链、分支去实现，就像自然界发生的那样：基因转录出 RNA，RNA 表达出蛋白质，再由蛋白质去承担生命活动。我相信自然的选择，这才是区块链技术正确的进化方向。</p>
+</div><div class="tags"><a href="/tags/区块链/">区块链</a><a href="/tags/金融/">金融</a></div><div class="post-nav"><a class="next" href="/2018/03/23/【学习笔记】厚朴中医学堂-痛经也有可能是心病/">【学习笔记】厚朴中医学堂 - 痛经也有可能是心病</a></div><div id="disqus_thread"><div class="btn_click_load"><button class="disqus_click_btn">阅读评论 「请确保 disqus.com 可以正常加载」</button></div><script>var disqus_shortname = 'hyxxsfwy';
+var disqus_identifier = '2018/04/30/对-ETH-与-EOS-未来发展的思考浅述/';
+var disqus_title = '对 ETH 与 EOS 未来发展的思考浅述（技术篇）';
+var disqus_url = 'https://hyxxsfwy.github.io/2018/04/30/对-ETH-与-EOS-未来发展的思考浅述/';
+$('.btn_click_load').click(function() {
+  (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+  $('.btn_click_load').css('display','none');
+});
+$.ajax({
+  url: 'https://disqus.com/next/config.json',
+  timeout: 3000,
+  type: 'GET',
+  success: (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    $('.btn_click_load').css('display','none');
+  })(),
+  error: function() {
+    $('.btn_click_load').css('display','block');
+  }
+});</script><script id="dsq-count-scr" src="//hyxxsfwy.disqus.com/count.js" async></script></div></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><div class="search-form"><input id="local-search-input" placeholder="Search" type="text" name="q" results="0"/><div id="local-search-result"></div></div></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/学习/">学习</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/翻墙/">翻墙</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/转载/">转载</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/拖延症/" style="font-size: 15px;">拖延症</a> <a href="/tags/免流/" style="font-size: 15px;">免流</a> <a href="/tags/HAProxy/" style="font-size: 15px;">HAProxy</a> <a href="/tags/Markdown/" style="font-size: 15px;">Markdown</a> <a href="/tags/LaTex/" style="font-size: 15px;">LaTex</a> <a href="/tags/教程/" style="font-size: 15px;">教程</a> <a href="/tags/Hello/" style="font-size: 15px;">Hello</a> <a href="/tags/中医/" style="font-size: 15px;">中医</a> <a href="/tags/GTD/" style="font-size: 15px;">GTD</a> <a href="/tags/时间管理/" style="font-size: 15px;">时间管理</a> <a href="/tags/帮助/" style="font-size: 15px;">帮助</a> <a href="/tags/密码学/" style="font-size: 15px;">密码学</a> <a href="/tags/翻墙/" style="font-size: 15px;">翻墙</a> <a href="/tags/信息安全/" style="font-size: 15px;">信息安全</a> <a href="/tags/边信道攻击/" style="font-size: 15px;">边信道攻击</a> <a href="/tags/Hack-Security/" style="font-size: 15px;">Hack&Security</a> <a href="/tags/区块链/" style="font-size: 15px;">区块链</a> <a href="/tags/金融/" style="font-size: 15px;">金融</a> <a href="/tags/XX-Net/" style="font-size: 15px;">XX-Net</a> <a href="/tags/Google/" style="font-size: 15px;">Google</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2018/04/30/对-ETH-与-EOS-未来发展的思考浅述/">对 ETH 与 EOS 未来发展的思考浅述（技术篇）</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/23/【学习笔记】厚朴中医学堂-痛经也有可能是心病/">【学习笔记】厚朴中医学堂 - 痛经也有可能是心病</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/18/【学习笔记】厚朴中医学堂-痛经的非药物外治法/">【学习笔记】厚朴中医学堂 - 痛经的非药物外治法</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/15/【转】现代密码学实践指南-2015年/">【转】现代密码学实践指南【2015年】</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/18/搜集可用于XX-Net的高速GGC-IP段/">搜集可用于 XX-Net 的高速 GGC IP 段</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/01/【转】边信道攻击，从米特尼克传奇重现说起/">【转】边信道攻击，从米特尼克传奇重现说起</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/01/30/HaP-免流模式语法帮助文档/">HaP 免流模式语法帮助文档</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/01/16/【转】如何在死线未至时，像死线已至那样高效？/">【转】如何在死线未至时，像死线已至那样高效？</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/01/15/Hexo-Markdown-简明语法手册/">Hexo Markdown 简明语法手册</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/01/14/hello-world/">Hello World</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-comment-o"> 最近评论</i></div><script type="text/javascript" src="//hyxxsfwy.disqus.com/recent_comments_widget.js?num_items=5&amp;hide_avatars=1&amp;avatar_size=32&amp;excerpt_length=20&amp;hide_mods=1"></script></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2018 <a href="/." rel="nofollow">Mobilicorpus.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=0.0.1" async></script><script type="text/javascript" src="//cdn.bootcss.com/fancybox/3.2.5/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.1" async></script><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/fancybox/3.2.5/jquery.fancybox.min.css"><script type="text/javascript" src="/js/search.js?v=0.0.1"></script><script>var search_path = 'search.xml';
+if (search_path.length == 0) {
+   search_path = 'search.xml';
+}
+var path = '/' + search_path;
+searchFunc(path, 'local-search-input', 'local-search-result');
+</script><script type="text/x-mathjax-config">MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+  });
+</script><script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-MML-AM_CHTML" async></script><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.1"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.1"></script></div></body></html>
