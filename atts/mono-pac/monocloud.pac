@@ -1,8 +1,6 @@
 function FindProxyForURL(url, host) {
     if (isPlainHostName(host)) return direct;
-    if (url.substring(0, 3)=="ws:" ||
-        url.substring(0, 4)=="wss:" ||
-        url.substring(0, 4)=="ftp:")
+    if (url.substring(0, 4)=="ftp:")
     return "direct";
     
     var h = host,
@@ -32,7 +30,7 @@ function FindProxyForURL(url, host) {
     return d - v[L] >> w[L] === 0 ? direct: proxy
 }
 
-var proxy = "PROXY 127.0.0.1:8087",
+var r = "PROXY 127.0.0.1:10080",
 direct = "DIRECT",
 chnlist = {
     "sinaimg.com": 1,
