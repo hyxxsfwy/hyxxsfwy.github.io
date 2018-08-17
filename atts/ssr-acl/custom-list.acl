@@ -2,8 +2,7 @@
 #
 # 下载地址：https://hyxxsfwy.github.io/atts/ssr-acl/custom-list.acl
 # 引用来源：https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/banAD.acl
-# 更新时间：2018.03.26
-#
+# 更新时间：2018.08.17
 # 参数解释：
 # [proxy_all] 默认代理
 # [bypass_all] 默认直连
@@ -26,9 +25,11 @@
 (^|\.)\w*admaster\w*\..*$
 (^|\.)\w*adsage\w*\..*$
 (^|\.)\w*adsensor\w*\..*$
+(^|\.)\w*adservice\w*\..*$
 (^|\.)\w*adsh\w*\..*$
 (^|\.)\w*adsmogo\w*\..*$
 (^|\.)\w*adsrvmedia\w*\..*$
+(^|\.)\w*adsserving\w*\..*$
 (^|\.)\w*adwords\w*\..*$
 (^|\.)\w*analysis\w*\..*$
 (^|\.)\w*analytics\w*\..*$
@@ -40,7 +41,6 @@
 (^|\.)\w*monitor\w*\..*$
 (^|\.)\w*openx\w*\..*$
 (^|\.)\w*partnerad\w*\..*$
-(^|\.)\w*pingfore\w*\..*$
 (^|\.)\w*socdm\w*\..*$
 (^|\.)\w*supersonicads\w*\..*$
 (^|\.)\w*tracking\w*\..*$
@@ -60,7 +60,7 @@
 (^|\.)(analytics|img1|img2|mimg|push)\.126\.net$
 (^|\.)(a|c|clkservice|conv|dsp|dsp-impr2|gorgon|impservice2|impservice|rlogs|union|ydpushserver)\.youdao\.com$
 (^|\.)(nc004x|nc045x|qt002x|tb060x|tb104x)\.corp\.youdao\.com$
-(^|\.)haitaoad\.nosdn\.127\.net$
+(^|\.)(iadmat|haitaoad|iadmatvideo)\.nosdn\.127\.net$
 (^|\.)impservice\.(chnl|dict|dictapp|ictvista|dictweb|dictword|mail|union)\.youdao\.com$
 (^|\.)ir\.mail\.126\.com$
 (^|\.)ir\.mail\.yeah\.net$
@@ -84,7 +84,7 @@
 (^|\.)gg\.stargame\.com$
 
 # 2345
-(^|\.)(dl|download|wan|jifendownload)\.2345\.cn$
+(^|\.)(dl|download|houtai|jifen|minipage|wan|jifendownload|zhushou)\.2345\.cn$
 
 # 360
 (^|\.)3600\.com$
@@ -108,12 +108,16 @@
 (^|\.)(58|imp|stat)\.xgo\.com\.cn$
 (^|\.)(brandshow|jing|track)\.58\.com$
 
+# Auto home
+(^|\.)(33|al|alert|applogapi|c|cmx|dspmnt|pcd|pvx|rd|rdx|stats)\.autohome\.com\.cn$
+(^|\.)adm\d\.autoimg\.cn$
+(^|\.)push\.app\.autohome\.com\.cn$
+
 # Ali
 (^|\.)(adashx4yt|adash-c|ai|re|rj|simaba)\.m\.taobao\.com$
-(^|\.)(appdownload|afp|atanx|atanx2|gma|gtms\d\d)\.alicdn\.com$
+(^|\.)(afp|atanx|atanx2|gma|gtms\d\d)\.alicdn\.com$
 (^|\.)(fav|m|redirect|srd|tns)\.simba\.taobao\.com$
 (^|\.)(sdkinit|simaba|tyh)\.taobao\.com$
-(^|\.)a\.alimama\.cn$
 (^|\.)acjs\.aliyun\.com$
 (^|\.)adash-c\.ut\.taobao\.com$
 (^|\.)adashxgc\.ut\.taobao\.com$
@@ -130,7 +134,7 @@
 (^|\.)yiliao\.hupan\.com$
 
 # Baidu
-(^|\.)(a|adm|als|as|c|cb|cbjs|cbjslog|cjhq|cpro|cpro2|cpu-admin|crs|drmcmm|e|eclick|eiv|entry)\.baidu\.com$
+(^|\.)(a|adm|als|as|c|cb|cbjs|cbjslog|cjhq|cpro|cpro2|cpu|cpu-admin|crs|drmcmm|e|eclick|eiv|entry)\.baidu\.com$
 (^|\.)(hc|hm|hmma|hpd|imageplus|ma|mobads-logs|mobads|mtj|nsclick)\.baidu\.com$
 (^|\.)(pups|rj|rp|spcode|tk|tongji|tuisong|ucstat|ufosdk|union|utility|utk|videopush|wangmeng|wm|znsv)\.baidu\.com$
 (^|\.)ashifen\.com$
@@ -139,6 +143,7 @@
 (^|\.)cpro\.baidustatic\.com$
 (^|\.)cpro\.tieba\.baidu\.com$
 (^|\.)cpro\.zhidao\.baidu\.com$
+(^|\.)fc-\.cdn\.bcebos\.com$
 (^|\.)itsdata\.map\.baidu\.com$
 (^|\.)log\.nuomi\.com$
 (^|\.)mg09\.zhaopin\.com$
@@ -158,26 +163,51 @@
 (^|\.)(adm|assets|tjlog)(\.ps|)\.easou\.com$
 (^|\.)(ad|push|sys)\.zhangyue\.com$
 (^|\.)(cj|game|tongji)\.qidian\.com$
+(^|\.)aishowbger\.com$
 (^|\.)api\.itaoxiaoshuo\.com$
+(^|\.)bbcoe\.cn$
+(^|\.)dkeyn\.com$
+(^|\.)drdwy\.com$
+(^|\.)e701\.net$
+(^|\.)e\.aa985\.cn$
+(^|\.)e\.v02u9\.cn$
+(^|\.)ehxyz\.com$
+(^|\.)ethod\.gzgmjcx\.com$
+(^|\.)focuscat\.com$
+(^|\.)hdswgc\.com$
+(^|\.)jyd\.fjzdmy\.com$
+(^|\.)m\.ourlj\.com$
+(^|\.)m\.txtxr\.com$
+(^|\.)m\.vsxet\.com$
+(^|\.)miam4\.cn$
 (^|\.)o\.if\.qidian\.com$
+(^|\.)p\.vq6nsu\.cn$
+(^|\.)picture\.duokan\.com$
+(^|\.)pyerc\.com$
 (^|\.)s1\.cmfu\.com$
+(^|\.)sc\.shayugg\.com$
+(^|\.)sdk\.cferw\.com$
+(^|\.)sezvc\.com$
 (^|\.)ut2\.shuqistat\.com$
-                      
+(^|\.)xgcsr\.com$
+(^|\.)xjq\.jxmqkj\.com$
+(^|\.)xpe\.cxaerp\.com$
+(^|\.)xtzxmy\.com$
+(^|\.)xyrkl\.com$
+(^|\.)zhuanfakong\.com$
 
 # Dangdang
 (^|\.)(a|click|schprompt|t)\.dangdang\.com$
+
+# Douyin
+(^|\.)log\.snssdk\.com$
 
 # Duomi
 (^|\.)ad\.duomi\.com$
 (^|\.)boxshows\.com$
 
-### Facebook
-(^|\.)ads.*\.facebook\.com$
-(^|\.)graph\.facebook\.com$
-(^|\.)creative.*\.fbcdn\.net$
+# Facebook
 (^|\.)staticxx\.facebook\.com$
-(^|\.)creative.*\.facebook\.com$
-(^|\.)fbcdn-creative.*\.akamaihd\.net$
 
 # Fang
 (^|\.)click1n\.soufun\.com$
@@ -214,12 +244,13 @@
 (^|\.)stat\.m\.jd\.com$
 
 # Kugou
-(^|\.)(adserviceretry|bssdlbig|d|downmobile|fanxing|gad|game|gg|install|install2|kgmobilestat|minidcsc|mo|mobilelog|mvads|p|rtmonitor|sdn|tj)\.kugou\.com$
+(^|\.)(bssdl|bssdlbig|d|downmobile|fanxing|gad|game|gamebox|gg|install|install2|kgmobilestat|minidcsc|mo|mobilelog|mvads|p|rtmonitor|sdn|tj)\.kugou\.com$
 (^|\.)(msg|push|update)\.mobile\.kugou\.com$
 (^|\.)ads\.service\.kugou\.com$
 (^|\.)gcapi\.sy\.kugou\.com$
 (^|\.)kuaikaiapp\.com$
 (^|\.)log\.stat\.kugou\.com$
+(^|\.)log\.web\.kugou\.com$
 
 # Kuwo
 (^|\.)(deliver|g|log|kwmsg|mobilead|msclick2|msphoneclick|updatepage|wa|webstat)\.kuwo\.cn$
@@ -234,12 +265,10 @@
 (^|\.)umid\.orion\.meizu\.com$
 
 # Meitu
+(^|\.)(corp|gg|message|tuiguang)\.meitu\.com$
+(^|\.)(dc|mdc|rabbit)\.meitustat\.com$
 (^|\.)a\.koudai\.com$
-(^|\.)corp\.meitu\.com$
-(^|\.)gg\.meitu\.com$
 (^|\.)meitubeauty\.meitudata\.com$
-(^|\.)message\.meitu\.com$
-(^|\.)tuiguang\.meitu\.com$
 (^|\.)xiuxiu\.android\.dl\.meitu\.com$
 (^|\.)xiuxiu\.mobile\.meitudata\.com$
 
@@ -273,10 +302,8 @@
 
 # QQ
 (^|\.)\w*omgmta\w*\.\w*$
-(^|\.)(act|adsfile|bugly|buluo|e|monitor|pingma|pingtcss|report|tajs|tcss|uu)\.qq\.com$
+(^|\.)(act|adsfile|bugly|buluo|monitor|pingma|pingtcss|report|tajs|tcss|uu)\.qq\.com$
 (^|\.)ad\.qun\.qq\.com$
-(^|\.)res\.imtt\.qq\.com$
-(^|\.)gdt\.qq\.com$
 
 # RenRen
 (^|\.)jebe\.renren\.com$
@@ -285,7 +312,7 @@
 
 # Sina
 (^|\.)(adimg|pay|sax|sdkapp|sdkclick|trends|u1\.img|wbapp|wbclick|wbpctips)\.mobile\.sina\.cn$
-(^|\.)(ad|adbox|adm|atm|d\d|dcads|dmp|leju|sax|sax\d|slog)\.sina\.com(\.cn|)$
+(^|\.)(ad|ad\d|adbox|adm|d\d|dcads|dmp|leju|sax|sax\d|slog)\.sina\.com(\.cn|)$
 (^|\.)(alitui|biz|game|wax)\.weibo\.com(\.cn|)$
 (^|\.)cre\.dp\.sina\.cn$
 (^|\.)gw5\.push\.mcp\.weibo\.cn$
@@ -330,24 +357,21 @@
 (^|\.)u\.ucfly\.com$
 
 # Weifeng
+(^|\.)aoodoo\.feng\.com$
 (^|\.)fengbuy\.com$
+(^|\.)push\.feng\.com$
 (^|\.)we\.tm$
 
-### WPS Office
+# WPS Office
 (^|\.)(bannera|rating6|cloudservice.*)\.kingsoft-office-service\.com$
 (^|\.)(docerad|gou|info|minfo|notify|pcfg|push|wpsweb-dc)\.wps\.cn$
-(^|\.)movip\.wps\.com$
 (^|\.)ad\.docer\.wps\.cn$
 (^|\.)adm\.zookingsoft\.com$
 (^|\.)bole\.shangshufang\.ksosoft\.com$
 (^|\.)counter\.kingsoft\.com$
 (^|\.)dl\.op\.wpscdn\.cn$
 (^|\.)hoplink\.ksosoft\.com$
-(^|\.)ws\.ksmobile\.net$
-(^|\.)ups\.ksmobile\.net$
 (^|\.)ic\.ksosoft\.com$
-(^|\.)uid\.ksosoft\.com$
-(^|\.)event\.ksosoft\.com$
 (^|\.)img.*\.mini\.cache\.wps\.cn$
 (^|\.)img\.gou\.wpscdn\.cn$
 (^|\.)ios-informationplatform\.wps\.cn$
@@ -442,6 +466,7 @@
 119.188.172.192/28
 119.188.173.0/27
 123.130.122.128/28
+124.192.153.42/32
 157.122.96.23/32
 183.221.244.0/22
 
@@ -468,7 +493,7 @@
 # Sohu 搜狐
 (^|\.)(888|lm|push)\.tv\.sohu\.com$
 (^|\.)(aty|bd|click|click2|ctr|pv|pb|wl|um)\.hd\.sohu\.com$
-(^|\.)(aty|hui|wan|yule|pv)\.sohu\.com$
+(^|\.)(adnet|aty|hui|wan|yule|pv)\.sohu\.com$
 (^|\.)api\.k\.sohu\.com$
 (^|\.)count\.vrs\.sohu\.com$
 (^|\.)goto\.sms\.sohu\.com$
@@ -582,10 +607,10 @@
 
 # Ads in Video apps end ********************上面都是
 
+
 # 常用网站广告****************
 (^|\.)(168|adshownew|stat)\.it168\.com$
 (^|\.)(1|2)\.win7china\.com$
-(^|\.)(33|c|pcd|alert)\.autohome\.com\.cn$
 (^|\.)(801|803|806|808|bdj|dol|click)\.(tianya|tianyaui)\.cn$
 (^|\.)(92x|its-dori)\.tumblr\.com$
 ######
@@ -635,7 +660,6 @@
 (^|\.)n\.cosbot\.cn$
 (^|\.)pdl\.gionee\.com$
 (^|\.)pica-juicy\.picacomic\.com$
-(^|\.)picture\.duokan\.com$
 (^|\.)pixel\.wp\.com$
 (^|\.)pub\.mop\.com$
 (^|\.)push\.wandoujia\.com$
@@ -653,9 +677,11 @@
 (^|\.)up\.qingdaonews\.com$
 
 # 广告联盟-国内****************
+(^|\.)100peng\.com$
 (^|\.)114la\.com$
 (^|\.)123juzi\.net$
 (^|\.)138lm\.com$
+(^|\.)17un\.com$
 (^|\.)2cnt\.net$
 (^|\.)3gmimo\.com$
 (^|\.)3xx\.vip$
@@ -726,6 +752,7 @@
 (^|\.)allyes\.com$
 ######
 #(^|\.)amazon-adsystem\.com$
+(^|\.)amplitude\.com$
 (^|\.)analysys\.cn$
 (^|\.)angsrvr\.com$
 (^|\.)anquan\.org$
@@ -736,14 +763,15 @@
 (^|\.)appdriver\.cn$
 (^|\.)appjiagu\.com$
 (^|\.)applifier\.com$
-(^|\.)applovin\.com$
 (^|\.)appsflyer\.com$
 (^|\.)atdmt\.com$
 (^|\.)baifendian\.com$
 (^|\.)banmamedia\.com$
 (^|\.)baoyatu\.cc$
 (^|\.)baycode\.cn$
+(^|\.)bayimob\.com$
 (^|\.)behe\.com$
+(^|\.)bfshan\.cn$
 (^|\.)biddingos\.com$
 (^|\.)biddingx\.com$
 (^|\.)bjxiaohua\.com$
@@ -974,12 +1002,14 @@
 (^|\.)umtrack\.com$
 (^|\.)unimhk\.com$
 (^|\.)union-wifi\.com$
+(^|\.)union001\.com$
 (^|\.)unionsy\.com$
 (^|\.)unlitui\.com$
 (^|\.)uri6\.com$
 (^|\.)userstyles\.org$
 (^|\.)ushaqi\.com$
 (^|\.)usingde\.com$
+(^|\.)uuzu\.com$
 (^|\.)uyunad\.com$
 (^|\.)vamaker\.com$
 (^|\.)voiceads\.cn$
@@ -1012,6 +1042,7 @@
 (^|\.)ylunion\.com$
 (^|\.)ymapp\.com$
 (^|\.)ymcdn\.cn$
+(^|\.)yongyuelm\.com$
 (^|\.)yooli\.com$
 (^|\.)youmi\.net$
 (^|\.)youxiaoad\.com$
@@ -1074,7 +1105,6 @@
 (^|\.)fastapi\.net$
 (^|\.)fastclick\.com$
 (^|\.)fastclick\.net$
-(^|\.)flurry\.com$
 (^|\.)gosquared\.com$
 (^|\.)gtags\.net$
 (^|\.)heyzap\.com$
@@ -1134,12 +1164,16 @@
 
 # 垃圾网站
 (^|\.)11h5\.com$
+(^|\.)1kxun\.mobi$
+(^|\.)519397\.com$
+(^|\.)626uc\.com$
+(^|\.)915\.com$
 (^|\.)appget\.cn$
 (^|\.)appuu\.cn$
 (^|\.)coinhive\.com$
 (^|\.)minghui\.org$
-(^|\.)win-stock\.com\.cn$
 (^|\.)wanfeng1\.com$
+(^|\.)win-stock\.com\.cn$
 (^|\.)zantainet\.com$
 
 ### 运营商广告
@@ -1169,6 +1203,7 @@
 60.190.139.164/32
 60.191.124.196/32
 60.210.17.0/24
+61.129.70.132/32
 61.132.216.232/32
 61.132.221.146/32
 61.132.255.128/25
@@ -1182,10 +1217,6 @@
 74.117.182.77/32
 78.140.131.214/32
 101.201.29.182/32
-101.227.12.0/23
-101.227.14.0/24
-101.227.119.0/24
-101.227.200.0/24
 103.249.254.113/32
 104.195.62.12/32
 104.197.140.120/32
@@ -1272,14 +1303,12 @@
 220.115.251.25/32
 220.196.52.141/32
 221.179.46.128/25
-221.179.131.72/32
 221.179.140.0/24
 221.179.183.0/24
 221.179.191.0/24
 221.204.213.222/32
 221.228.17.152/32
 221.228.214.101/32
-222.73.156.235/32
 222.186.61.97/32
 222.187.226.96/32
 
@@ -1287,9 +1316,25 @@
 [bypass_list]
 # 直连列表
 
-# 指定域名直连
+# CN域名直连
 ^.*\.cn$
-(^|\.)bilibili\.com$
+
+# Blizzard
+(^|\.)battle\.net$
+(^|\.)battlenet\.com$
+(^|\.)blizzard\.com$
+
+# Prior
+(^|\.)client\.amplifi\.com$
+(^|\.)ip\.bjango\.com$
+(^|\.)alphassl\.com$
+(^|\.)edu\.cn$
+
+# Spark
+(^|\.)amplitude\.com$
+(^|\.)firebaseio\.com$
+(^|\.)hockeyapp\.net$
+(^|\.)smartmailcloud\.com$
 
 # TaoBao
 (^|\.)alibaba\.com$
@@ -1308,6 +1353,13 @@
 (^|\.)tbcache\.com$
 (^|\.)tbcdn\.com$
 (^|\.)tmall\.com$
+
+# TeamViewer
+109.239.140.0/24
+139.220.243.27/32
+172.16.102.56/32
+185.188.32.1/28
+221.226.128.146/32
 
 # GFWList Whitelist
 (^|\.)connectivitycheck\.gstatic\.com$
@@ -1343,6 +1395,221 @@
 (^|\.)trimt-nsa\.gov\.tw$
 (^|\.)uluai\.com\.cn$
 (^|\.)yda\.gov\.tw$
+
+# Accelerate direct sites
+(^|\.)12306\.com$
+(^|\.)126\.net$
+(^|\.)163\.com$
+(^|\.)1688\.com$
+(^|\.)17k\.com$
+(^|\.)360\.com$
+(^|\.)360buy\.com$
+(^|\.)360buyimg\.com$
+(^|\.)360doc\.com$
+(^|\.)360safe\.com$
+(^|\.)36kr\.com$
+(^|\.)56\.com$
+(^|\.)58\.com$
+(^|\.)abercrombie\.com$
+(^|\.)acfun\.tv$
+(^|\.)acgvideo\.com$
+(^|\.)air-matters\.com$
+(^|\.)air-matters\.io$
+(^|\.)amap\.com$
+(^|\.)appstore\.com$
+(^|\.)autonavi\.com$
+(^|\.)baidu\.com$
+(^|\.)battle\.net$
+(^|\.)bdimg\.com$
+(^|\.)bdstatic\.com$
+(^|\.)bilibili\.cn$
+(^|\.)bilibili\.com$
+(^|\.)bilibili\.tv$
+(^|\.)bing\.com$
+(^|\.)biqudu\.com$
+(^|\.)biquge\.com$
+(^|\.)bitauto\.com$
+(^|\.)bootcss\.com$
+(^|\.)chinacache\.net$
+(^|\.)cibntv\.net$
+(^|\.)clouddn\.com$
+(^|\.)cloudxns\.net$
+(^|\.)cmfu\.com$
+(^|\.)cn163\.net$
+(^|\.)cnbeta\.com$
+(^|\.)cnbetacdn\.com$
+(^|\.)coolapk\.com$
+(^|\.)coolapkmarket\.com$
+(^|\.)dangdang\.com$
+(^|\.)dianping\.com$
+(^|\.)dilidili\.wang$
+(^|\.)douban\.com$
+(^|\.)doubanio\.com$
+(^|\.)douyu\.com$
+(^|\.)duokan\.com$
+(^|\.)dytt8\.net$
+(^|\.)easou\.com$
+(^|\.)eastmoney\.com$
+(^|\.)ecitic\.com$
+(^|\.)ewqcxz\.com$
+(^|\.)fang\.com$
+(^|\.)fantasy\.tv$
+(^|\.)feng\.com$
+(^|\.)fir\.im$
+(^|\.)frdic\.com$
+(^|\.)fresh-ideas\.cc$
+(^|\.)geetest\.com$
+(^|\.)godic\.net$
+(^|\.)gravatar\.com$
+(^|\.)guazi\.com$
+(^|\.)haibian\.com$
+(^|\.)hao123\.com$
+(^|\.)haosou\.com$
+(^|\.)hollisterco\.com$
+(^|\.)hongxiu\.com$
+(^|\.)huajiao\.com$
+(^|\.)hupu\.com$
+(^|\.)iciba\.com$
+(^|\.)ifeng\.com$
+(^|\.)ifengimg\.com$
+(^|\.)images-amazon\.com$
+(^|\.)infzm\.com$
+(^|\.)ipip\.net$
+(^|\.)iqiyi\.com$
+(^|\.)it168\.com$
+(^|\.)ithome\.com$
+(^|\.)ixdzs\.com$
+(^|\.)jd\.com$
+(^|\.)jianguoyun\.com$
+(^|\.)jianshu\.com$
+(^|\.)jianshu\.io$
+(^|\.)jianshuapi\.com$
+(^|\.)jiathis\.com$
+(^|\.)jumei\.com$
+(^|\.)kanimg\.com$
+(^|\.)kankan\.com$
+(^|\.)kaola\.com$
+(^|\.)knewone\.com$
+(^|\.)kuaidi100\.com$
+(^|\.)lecloud\.com$
+(^|\.)lemicp\.com$
+(^|\.)letv\.com$
+(^|\.)letvcloud\.com$
+(^|\.)lofter\.com$
+(^|\.)luoo\.net$
+(^|\.)lvmama\.com$
+(^|\.)lxdns\.com$
+(^|\.)meizu\.com$
+(^|\.)mi\.com$
+(^|\.)miaopai\.com$
+(^|\.)microsoft\.com$
+(^|\.)miui\.com$
+(^|\.)miwifi\.com$
+(^|\.)mobike\.com$
+(^|\.)moji\.com$
+(^|\.)moke\.com$
+(^|\.)myqcloud\.com$
+(^|\.)myunlu\.com$
+(^|\.)netease\.com$
+(^|\.)nuomi\.com$
+(^|\.)ourdvs\.com$
+(^|\.)overcast\.fm$
+(^|\.)pptv\.com$
+(^|\.)pstatp\.com$
+(^|\.)qbox\.me$
+(^|\.)qcloud\.com$
+(^|\.)qdaily\.com$
+(^|\.)qdmm\.com$
+(^|\.)qhimg\.com$
+(^|\.)qidian\.com$
+(^|\.)qihucdn\.com$
+(^|\.)qin\.io$
+(^|\.)qiniucdn\.com$
+(^|\.)qiniudn\.com$
+(^|\.)qiushibaike\.com$
+(^|\.)qiyi\.com$
+(^|\.)qiyipic\.com$
+(^|\.)qq\.com$
+(^|\.)qqmail\.com$
+(^|\.)qqurl\.com$
+(^|\.)quanmin\.tv$
+(^|\.)qunar\.com$
+(^|\.)rarbg\.to$
+(^|\.)repaik\.com$
+(^|\.)rrmj\.tv$
+(^|\.)ruguoapp\.com$
+(^|\.)sandai\.net$
+(^|\.)shumilou\.net$
+(^|\.)sinaapp\.com$
+(^|\.)sinaimg\.com$
+(^|\.)smzdm\.com$
+(^|\.)snwx\.com$
+(^|\.)so\.com$
+(^|\.)sogou\.com$
+(^|\.)sogoucdn\.com$
+(^|\.)sohu\.com$
+(^|\.)soku\.com$
+(^|\.)soso\.com$
+(^|\.)ssl-images-amazon\.com$
+(^|\.)sspai\.com$
+(^|\.)startssl\.com$
+(^|\.)steampowered\.com$
+(^|\.)suning\.com$
+(^|\.)taobao\.com$
+(^|\.)tencent\.com$
+(^|\.)tenpay\.com$
+(^|\.)tietuku\.com$
+(^|\.)tiexue\.net$
+(^|\.)tmall\.com$
+(^|\.)tmiaoo\.com$
+(^|\.)toutiao\.com$
+(^|\.)ttmeiju\.com$
+(^|\.)tudou\.com$
+(^|\.)tuniu\.com$
+(^|\.)udache\.com$
+(^|\.)upaiyun\.com$
+(^|\.)upyun\.com$
+(^|\.)uxengine\.net$
+(^|\.)v2ex\.com$
+(^|\.)vip\.com$
+(^|\.)wandoujia\.com$
+(^|\.)weibo\.com$
+(^|\.)weico\.cc$
+(^|\.)weiphone\.com$
+(^|\.)weiphone\.net$
+(^|\.)weiyun\.com$
+(^|\.)xdrig\.com$
+(^|\.)xiami\.com$
+(^|\.)xiami\.net$
+(^|\.)xiaojukeji\.com$
+(^|\.)xiaomi\.com$
+(^|\.)xiaomi\.net$
+(^|\.)xiaomicp\.com$
+(^|\.)ximalaya\.com$
+(^|\.)xinhuanet\.com$
+(^|\.)xitek\.com$
+(^|\.)xmcdn\.com$
+(^|\.)xslb\.net$
+(^|\.)xunlei\.com$
+(^|\.)yach\.me$
+(^|\.)yeepay\.com$
+(^|\.)yhd\.com$
+(^|\.)yinxiang\.com$
+(^|\.)yinyuetai\.com$
+(^|\.)yixia\.com$
+(^|\.)ykimg\.com$
+(^|\.)youdao\.com$
+(^|\.)youku\.com$
+(^|\.)yunjiasu-cdn\.net$
+(^|\.)yy\.com$
+(^|\.)zdfans\.com$
+(^|\.)zealer\.com$
+(^|\.)zhanqi\.tv$
+(^|\.)zhaopin\.com$
+(^|\.)zhihu\.com$
+(^|\.)zhimg\.com$
+(^|\.)zimuzu\.tv$
+(^|\.)zmz00\d\.com$
 
 # 本地/局域网/保留地址
 ^(.*\.)?local$
@@ -1900,14 +2167,12 @@
 45.113.52.0/22
 45.113.56.0/22
 45.113.72.0/22
-45.113.108.0/22
 45.113.144.0/21
 45.113.168.0/22
 45.113.176.0/22
 45.113.184.0/22
 45.113.200.0/21
 45.113.208.0/20
-45.113.228.0/22
 45.113.240.0/22
 45.113.252.0/22
 45.114.0.0/22
@@ -1922,7 +2187,6 @@
 45.114.196.0/22
 45.114.200.0/22
 45.114.228.0/22
-45.114.236.0/22
 45.114.252.0/22
 45.115.44.0/22
 45.115.100.0/22
@@ -1933,13 +2197,12 @@
 45.115.164.0/22
 45.115.200.0/22
 45.115.212.0/22
-45.115.216.0/22
 45.115.228.0/22
 45.115.236.0/22
 45.115.244.0/22
 45.115.248.0/22
 45.116.12.0/22
-45.116.16.0/21
+45.116.16.0/22
 45.116.24.0/22
 45.116.32.0/21
 45.116.52.0/22
@@ -2039,7 +2302,6 @@
 45.126.212.0/22
 45.126.220.0/22
 45.127.8.0/21
-45.127.36.0/22
 45.127.96.0/22
 45.127.116.0/22
 45.127.124.0/22
@@ -2095,6 +2357,7 @@
 45.251.160.0/19
 45.251.192.0/19
 45.251.224.0/22
+45.251.240.0/22
 45.252.0.0/19
 45.252.32.0/20
 45.252.48.0/22
@@ -2240,6 +2503,17 @@
 61.236.0.0/15
 61.240.0.0/14
 62.234.0.0/16
+68.79.0.0/18
+69.230.192.0/18
+69.231.128.0/18
+69.234.192.0/18
+69.235.128.0/18
+71.131.192.0/18
+71.132.0.0/18
+71.136.64.0/18
+71.137.0.0/18
+81.68.0.0/14
+82.156.0.0/15
 91.234.36.0/24
 94.191.0.0/17
 101.0.0.0/22
@@ -2469,7 +2743,6 @@
 103.26.0.0/22
 103.26.64.0/22
 103.26.76.0/22
-103.26.116.0/22
 103.26.132.0/22
 103.26.156.0/22
 103.26.160.0/22
@@ -2558,7 +2831,6 @@
 103.38.116.0/22
 103.38.132.0/22
 103.38.140.0/22
-103.38.220.0/22
 103.38.224.0/21
 103.38.232.0/22
 103.38.252.0/22
@@ -2710,7 +2982,6 @@
 103.53.124.0/22
 103.53.128.0/20
 103.53.144.0/22
-103.53.160.0/22
 103.53.180.0/22
 103.53.204.0/22
 103.53.208.0/21
@@ -2722,7 +2993,6 @@
 103.54.60.0/22
 103.54.160.0/21
 103.54.212.0/22
-103.54.228.0/22
 103.54.240.0/22
 103.55.24.0/22
 103.55.80.0/22
@@ -2733,7 +3003,6 @@
 103.55.208.0/22
 103.55.228.0/22
 103.55.236.0/22
-103.55.240.0/22
 103.56.8.0/22
 103.56.16.0/21
 103.56.32.0/22
@@ -2751,7 +3020,6 @@
 103.57.136.0/22
 103.57.196.0/22
 103.58.24.0/22
-103.58.182.0/23
 103.59.76.0/22
 103.59.100.0/22
 103.59.112.0/20
@@ -2934,6 +3202,7 @@
 103.79.24.0/21
 103.79.36.0/22
 103.79.40.0/21
+103.79.52.0/22
 103.79.56.0/21
 103.79.64.0/21
 103.79.80.0/21
@@ -2984,7 +3253,6 @@
 103.84.12.0/22
 103.84.16.0/20
 103.84.48.0/22
-103.84.56.0/22
 103.84.64.0/22
 103.84.72.0/22
 103.84.92.0/22
@@ -2993,8 +3261,7 @@
 103.85.20.0/22
 103.85.24.0/22
 103.85.44.0/22
-103.85.48.0/21
-103.85.56.0/22
+103.85.48.0/22
 103.85.84.0/22
 103.85.136.0/22
 103.85.144.0/22
@@ -3009,7 +3276,6 @@
 103.86.68.0/22
 103.86.80.0/21
 103.86.88.0/22
-103.86.129.0/24
 103.86.204.0/22
 103.86.208.0/20
 103.86.224.0/19
@@ -3029,8 +3295,6 @@
 103.88.64.0/22
 103.88.72.0/22
 103.88.96.0/21
-103.88.139.0/24
-103.88.152.0/23
 103.88.164.0/22
 103.88.176.0/22
 103.88.184.0/21
@@ -3166,9 +3430,6 @@
 103.99.104.0/22
 103.99.116.0/22
 103.99.120.0/22
-103.99.132.0/22
-103.99.136.0/21
-103.99.144.0/22
 103.99.152.0/22
 103.99.220.0/22
 103.99.232.0/21
@@ -3293,6 +3554,91 @@
 103.111.172.0/22
 103.111.252.0/22
 103.112.28.0/22
+103.112.68.0/22
+103.112.72.0/22
+103.112.88.0/21
+103.112.96.0/22
+103.112.108.0/22
+103.112.112.0/21
+103.112.140.0/22
+103.112.172.0/22
+103.112.184.0/22
+103.112.208.0/22
+103.113.4.0/22
+103.113.92.0/22
+103.113.144.0/22
+103.113.220.0/22
+103.113.232.0/21
+103.114.4.0/22
+103.114.28.0/22
+103.114.68.0/22
+103.114.72.0/22
+103.114.100.0/22
+103.114.132.0/22
+103.114.148.0/22
+103.114.156.0/22
+103.114.176.0/22
+103.114.212.0/22
+103.114.236.0/22
+103.114.240.0/22
+103.115.16.0/22
+103.115.40.0/21
+103.115.48.0/20
+103.115.64.0/21
+103.115.92.0/22
+103.115.120.0/22
+103.115.148.0/22
+103.115.204.0/23
+103.115.248.0/22
+103.116.20.0/22
+103.116.40.0/22
+103.116.64.0/22
+103.116.72.0/21
+103.116.92.0/22
+103.116.120.0/22
+103.116.128.0/22
+103.116.132.0/23
+103.116.148.0/22
+103.116.184.0/22
+103.116.206.0/23
+103.116.220.0/22
+103.116.224.0/21
+103.117.16.0/22
+103.117.72.0/22
+103.117.88.0/22
+103.117.132.0/22
+103.117.136.0/22
+103.117.188.0/22
+103.117.220.0/22
+103.118.19.0/24
+103.118.36.0/22
+103.118.52.0/22
+103.118.56.0/21
+103.118.64.0/21
+103.118.72.0/22
+103.118.88.0/22
+103.118.173.0/24
+103.118.192.0/19
+103.118.240.0/20
+103.119.0.0/22
+103.119.12.0/22
+103.119.16.0/22
+103.119.28.0/22
+103.119.44.0/22
+103.119.104.0/22
+103.119.115.0/24
+103.119.156.0/22
+103.119.180.0/22
+103.119.200.0/22
+103.119.224.0/22
+103.120.52.0/22
+103.120.72.0/22
+103.120.76.0/24
+103.120.88.0/22
+103.120.96.0/21
+103.120.140.0/22
+103.120.196.0/22
+103.120.224.0/22
 103.192.0.0/19
 103.192.48.0/21
 103.192.56.0/22
@@ -3457,7 +3803,6 @@
 103.211.96.0/21
 103.211.156.0/22
 103.211.164.0/22
-103.211.168.0/22
 103.211.192.0/22
 103.211.220.0/22
 103.211.224.0/22
@@ -3483,13 +3828,12 @@
 103.213.136.0/21
 103.213.144.0/20
 103.213.160.0/19
-103.213.248.0/21
+103.213.248.0/22
 103.214.32.0/22
 103.214.48.0/22
 103.214.84.0/22
 103.214.168.0/22
 103.214.212.0/22
-103.214.224.0/22
 103.214.240.0/21
 103.215.28.0/22
 103.215.32.0/21
@@ -3587,7 +3931,6 @@
 103.226.40.0/22
 103.226.56.0/21
 103.226.80.0/22
-103.226.116.0/22
 103.226.132.0/22
 103.226.156.0/22
 103.226.180.0/22
@@ -3627,7 +3970,7 @@
 103.229.240.0/22
 103.230.0.0/22
 103.230.28.0/22
-103.230.40.0/21
+103.230.44.0/22
 103.230.96.0/22
 103.230.196.0/22
 103.230.200.0/21
@@ -3653,7 +3996,6 @@
 103.234.0.0/22
 103.234.20.0/22
 103.234.56.0/22
-103.234.124.0/22
 103.234.128.0/22
 103.234.172.0/22
 103.234.180.0/22
@@ -3769,7 +4111,7 @@
 103.248.192.0/22
 103.248.212.0/22
 103.248.220.0/22
-103.248.224.0/21
+103.248.224.0/22
 103.249.8.0/21
 103.249.52.0/22
 103.249.104.0/22
@@ -4093,7 +4435,7 @@
 116.207.0.0/16
 116.208.0.0/14
 116.212.160.0/20
-116.213.40.0/21
+116.213.44.0/22
 116.213.64.0/18
 116.213.128.0/17
 116.214.32.0/19
@@ -4427,7 +4769,6 @@
 124.150.137.0/24
 124.151.0.0/16
 124.152.0.0/16
-124.156.0.0/16
 124.160.0.0/13
 124.172.0.0/14
 124.192.0.0/15
@@ -4500,6 +4841,7 @@
 139.226.0.0/15
 140.75.0.0/16
 140.143.0.0/16
+140.179.0.0/16
 140.205.0.0/16
 140.206.0.0/15
 140.210.0.0/16
@@ -4514,12 +4856,10 @@
 144.0.0.0/16
 144.7.0.0/16
 144.12.0.0/16
-144.48.8.0/21
-144.48.56.0/22
+144.48.8.0/22
 144.48.64.0/22
 144.48.88.0/22
 144.48.156.0/22
-144.48.172.0/22
 144.48.180.0/22
 144.48.184.0/22
 144.48.204.0/22
@@ -4538,7 +4878,6 @@
 146.196.124.0/22
 148.70.0.0/16
 150.0.0.0/16
-150.109.0.0/16
 150.115.0.0/16
 150.121.0.0/16
 150.122.0.0/16
@@ -4614,9 +4953,9 @@
 160.202.216.0/21
 160.202.224.0/19
 160.238.64.0/22
+161.189.0.0/16
 161.207.0.0/16
 162.14.0.0/16
-162.62.0.0/16
 162.105.0.0/16
 163.0.0.0/16
 163.47.4.0/22
@@ -4644,7 +4983,6 @@
 167.189.0.0/16
 167.220.244.0/22
 168.160.0.0/16
-170.106.0.0/16
 170.179.0.0/16
 171.8.0.0/13
 171.34.0.0/15
@@ -4666,7 +5004,6 @@
 175.64.0.0/11
 175.102.0.0/16
 175.106.128.0/17
-175.111.108.0/22
 175.111.144.0/20
 175.111.160.0/20
 175.111.184.0/22
@@ -4678,6 +5015,7 @@
 175.176.156.0/22
 175.176.176.0/22
 175.176.188.0/22
+175.176.192.0/22
 175.178.0.0/16
 175.184.128.0/18
 175.185.0.0/16
@@ -5080,7 +5418,6 @@
 202.94.74.0/24
 202.94.81.0/24
 202.94.92.0/22
-202.95.0.0/19
 202.95.240.0/21
 202.95.252.0/22
 202.96.0.0/12
@@ -6161,7 +6498,7 @@
 203.189.6.0/23
 203.189.112.0/22
 203.189.192.0/19
-203.189.232.0/21
+203.189.232.0/22
 203.189.240.0/22
 203.190.96.0/20
 203.190.249.0/24
@@ -6324,7 +6661,10 @@
 223.96.0.0/12
 223.112.0.0/14
 223.116.0.0/15
-223.120.0.0/13
+223.120.128.0/17
+223.121.128.0/17
+223.122.0.0/15
+223.124.0.0/14
 223.128.0.0/15
 223.144.0.0/12
 223.160.0.0/14
@@ -6419,9 +6759,10 @@
 (^|\.)blogspot\.com$
 (^|\.)blogspot\.hk$
 (^|\.)blogspot\.jp$
+(^|\.)bloomberg\.cn$
+(^|\.)bloomberg\.com$
 (^|\.)box\.com$
 (^|\.)cachefly\.net$
-(^|\.)cdninstagram\.com$
 (^|\.)cdnst\.net$
 (^|\.)comodoca\.com$
 (^|\.)content\.office\.net$
@@ -6452,8 +6793,11 @@
 (^|\.)gist\.github\.com$
 (^|\.)gongm\.in$
 (^|\.)googleapis\.cn$
+(^|\.)gstatic\.cn$
+(^|\.)gstatic\.com$
+(^|\.)gvt0\.com$
+(^|\.)gvt1\.com$
 (^|\.)id\.heroku\.com$
-(^|\.)instagram\.com$
 (^|\.)io\.io$
 (^|\.)issuu\.com$
 (^|\.)ixquick\.com$
@@ -6489,7 +6833,6 @@
 (^|\.)shadowsocks\.org$
 (^|\.)slack-edge\.com$
 (^|\.)smartdnsproxy\.com$
-(^|\.)smartmailcloud\.com$
 (^|\.)sndcdn\.com$
 (^|\.)soundcloud\.com$
 (^|\.)startpage\.com$
@@ -6524,17 +6867,52 @@
 (^|\.)zh\.m\.wikipedia\.org$
 (^|\.)zh\.wikipedia\.org$
 
+# Other
+(^|\.)unsplash\.com$
+
+# Apple
+(^|\.)itunes.apple\.com$
+
+# Instagram
+(^|\.)\w*instagram\w*\.\w*$
+(^|\.)cdninstagram\.com$
+(^|\.)instagram\.com$
+(^|\.)instagr\.am$
+(^|\.)akamaihd\.net$
+(^|\.)d36xtkk24g8jdx\.cloudfront\.net$
+
+# Kakao Talk
+(^|\.)kakao\.com$
+(^|\.)kakao\.co\.kr$
+(^|\.)kakaocdn\.net$
+1.201.0.0/24
+27.0.236.0/22
+103.246.56.0/22
+103.27.148.0/22
+110.76.140.0/22
+113.61.104.0/22
+
 # Line
 (^|\.)lin\.ee$
-(^|\.)line\.me$
+(^|\.)line-apps\.com$
 (^|\.)line-cdn\.net$
 (^|\.)line-scdn\.net$
-(^|\.)line-apps\.com$
+(^|\.)line\.me$
 (^|\.)line\.naver\.jp$
-
-# Whatsapp
-(^|\.)whatsapp\.com$
-(^|\.)whatsapp\.net$
+(^|\.)nhncorp\.jp$
+103.2.28.0/22
+119.235.224.0/21
+119.235.232.0/23
+119.235.235.0/24
+119.235.236.0/23
+125.6.146.0/24
+125.6.149.0/24
+125.6.190.0/24
+125.209.208.0/20
+203.104.103.0/24
+203.104.128.0/20
+203.174.66.64/26
+203.174.77.0/24
 
 # MytvSUPER & Netflix
 (^|\.)\w*nowtv100\w*\.\w*$
@@ -6547,6 +6925,54 @@
 (^|\.)nflximg\.net$
 (^|\.)nflxvideo\.net$
 (^|\.)tvb\.com$
+8.41.4.0/24
+23.246.0.0/18
+37.77.184.0/21
+45.57.0.0/17
+64.120.128.0/17
+66.197.128.0/17
+69.53.224.0/19
+108.175.32.0/20
+185.2.220.0/22
+185.9.188.0/22
+192.173.64.0/18
+198.38.96.0/19
+198.45.48.0/20
+207.45.72.0/22
+208.75.76.0/24
+
+# Onenote
+(^|\.)live\.net$
+(^|\.)live\.com$
+(^|\.)onenote\.com$
+
+# Potato Chat
+(^|\.)potato\.im$
+13.251.24.157/24
+13.251.41.203/24
+17.252.156.147/24
+17.252.157.26/24
+
+#ResiloSync
+(^|\.)config\.getsync\.com$
+(^|\.)config\.resilio\.com$
+54.235.182.157/32
+107.182.230.198/32
+173.244.209.150/32
+173.244.217.42/32
+209.95.56.60/32
+
+# Steam
+(^|\.)fanatical\.com$
+(^|\.)humblebundle\.com$
+(^|\.)steamcommunity\.com$
+(^|\.)steampowered\.com$
+(^|\.)steamstatic\.com$
+
+# Telegram
+91.108.0.0/16
+109.239.140.0/24
+149.154.160.0/20
 
 # Twitch
 (^|\.)twitch\.tv$
@@ -6554,14 +6980,24 @@
 (^|\.)jtvnw\.net$
 (^|\.)akamaized\.net$
 
-#ResiloSync
-173.244.217.42/32
-209.95.56.60/32
-107.182.230.198/32
-173.244.209.150/32
-54.235.182.157/32
-(^|\.)config\.getsync\.com$
-(^|\.)config\.resilio\.com$
+# Whatsapp
+(^|\.)whatsapp\.com$
+(^|\.)whatsapp\.net$
+18.194.0.0/15
+34.224.0.0/12
+54.242.0.0/15
+50.22.198.204/30
+208.43.122.128/27
+108.168.174.0/16
+173.192.231.32/27
+158.85.5.192/27
+174.37.243.0/16
+158.85.46.128/27
+173.192.222.160/27
+184.173.128.0/17
+158.85.224.160/27
+75.126.150.0/16
+69.171.235.0/16
 
 #飞流直播
 (^|\.)neulion\.com$
