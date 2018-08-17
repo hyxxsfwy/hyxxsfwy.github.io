@@ -30,8 +30,9 @@ function FindProxyForURL(url, host) {
     return d - v[L] >> w[L] === 0 ? direct: proxy
 }
 
-var r = "PROXY 127.0.0.1:10080",
+var proxy = "PROXY 127.0.0.1:10080",
 direct = "DIRECT",
+
 chnlist = {
     "sinaimg.com": 1,
     "newbandeng.com": 1,

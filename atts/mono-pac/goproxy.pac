@@ -34,6 +34,7 @@ function FindProxyForURL(url, host) {
 
 var proxy = "PROXY 127.0.0.1:8087",
 direct = "DIRECT",
+
 chnlist = {
     "sinaimg.com": 1,
     "newbandeng.com": 1,
