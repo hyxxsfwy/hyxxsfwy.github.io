@@ -1503,7 +1503,7 @@
 (^|\.)mi\.com$
 (^|\.)miaopai\.com$
 (^|\.)microsoft\.com$
-(^|\.)miui\.com$
+#(^|\.)miui\.com$
 (^|\.)miwifi\.com$
 (^|\.)mobike\.com$
 (^|\.)moji\.com$
@@ -1582,7 +1582,6 @@
 (^|\.)xiami\.com$
 (^|\.)xiami\.net$
 (^|\.)xiaojukeji\.com$
-###
 #(^|\.)xiaomi\.com$
 #(^|\.)xiaomi\.net$
 #(^|\.)xiaomicp\.com$
