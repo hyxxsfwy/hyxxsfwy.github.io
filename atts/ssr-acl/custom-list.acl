@@ -1582,9 +1582,10 @@
 (^|\.)xiami\.com$
 (^|\.)xiami\.net$
 (^|\.)xiaojukeji\.com$
-(^|\.)xiaomi\.com$
-(^|\.)xiaomi\.net$
-(^|\.)xiaomicp\.com$
+###
+#(^|\.)xiaomi\.com$
+#(^|\.)xiaomi\.net$
+#(^|\.)xiaomicp\.com$
 (^|\.)ximalaya\.com$
 (^|\.)xinhuanet\.com$
 (^|\.)xitek\.com$
